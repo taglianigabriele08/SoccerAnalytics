@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
+using System.Text.Json; // Usa questo per JsonSerializer
+using System.Text.Json.Serialization;
+
 
 namespace Cerebotani.GabrieleTagliani.Soccer.Components.Pages;
 
@@ -116,7 +116,7 @@ public partial class Campionati(DialogService dialogService,
     //                     };
     //                     db.SquadreCampionati.Add(legame);
     //                 }
-                    
+
     //                 legame.PartiteGiocate = item.PartiteGiocate;
     //                 legame.Vittorie = item.Vittorie;
     //                 legame.Pareggi = item.Pareggi;
@@ -184,23 +184,33 @@ public partial class Campionati(DialogService dialogService,
             var legamiClassifica = await db.SquadreCampionati
                 .Where(sc => sc.CampionatoId == campionatoContext.Id)
                 .ToListAsync();
-            
-            foreach (var l in legamiClassifica) {
+
+            foreach (var l in legamiClassifica)
+            {
                 l.Punti = 0; l.Vittorie = 0; l.Pareggi = 0; l.Sconfitte = 0;
                 l.GolFatti = 0; l.GolSubiti = 0; l.DifferenzaReti = 0; l.PartiteGiocate = 0;
             }
 
             foreach (var p in partiteImportate)
             {
-                //  Salva la partita nel DB per la pagina Calendario
-                var nuovaPartita = new Partita {
+                var nuovaPartita = new Partita
+                {
                     CampionatoId = campionatoContext.Id,
                     Giornata = p.Giornata,
                     Data = p.Data,
                     SquadraCasa = p.SquadraCasa,
                     SquadraTrasferta = p.SquadraTrasferta,
                     GolCasa = p.GolCasa,
-                    GolTrasferta = p.GolTrasferta
+                    GolTrasferta = p.GolTrasferta,
+
+                    Marcatori = p.Marcatori?.Select(m => new Marcatore
+                    {
+                        Nome = m.Nome,
+                        Minuto = m.Minuto,
+                        Recupero = m.Recupero,
+                        Rigore = m.Rigore,
+                        SquadraNome = m.SquadraNome
+                    }).ToList() ?? new List<Marcatore>()
                 };
                 db.Partite.Add(nuovaPartita);
 
@@ -215,7 +225,8 @@ public partial class Campionati(DialogService dialogService,
             await RefreshDataAsync();
             if (Grid != null) await Grid.Reload();
 
-            notificationService.Notify(new NotificationMessage {
+            notificationService.Notify(new NotificationMessage
+            {
                 Severity = NotificationSeverity.Success,
                 Summary = "Successo",
                 Detail = $"Calendario e Classifica aggiornati per {campionatoContext.Descrizione}"
@@ -223,8 +234,11 @@ public partial class Campionati(DialogService dialogService,
         }
         catch (Exception ex)
         {
-            notificationService.Notify(new NotificationMessage {
-                Severity = NotificationSeverity.Error, Summary = "Errore", Detail = ex.Message
+            notificationService.Notify(new NotificationMessage
+            {
+                Severity = NotificationSeverity.Error,
+                Summary = "Errore",
+                Detail = ex.Message
             });
         }
     }
@@ -242,30 +256,40 @@ public partial class Campionati(DialogService dialogService,
             .FirstOrDefaultAsync(s => s.Nome.ToLower() == nomePulito.ToLower());
 
         // 3. SE NON ESISTE, CREALA
-        if (squadra == null) {
-            squadra = new Squadra { 
-                Nome = nomePulito, 
-                Citta = "N.D.", 
-                Stadio = "N.D." 
+        if (squadra == null)
+        {
+            squadra = new Squadra
+            {
+                Nome = nomePulito,
+                Citta = "N.D.",
+                Stadio = "N.D."
             };
             db.Squadre.Add(squadra);
-            
+
             // IMPORTANTE: Salviamo subito qui per generare l'ID, 
             // ma solo se la squadra è nuova di zecca.
-            await db.SaveChangesAsync(); 
+            await db.SaveChangesAsync();
         }
 
         // 4. CERCA IL LEGAME CLASSIFICA
         var legame = await db.SquadreCampionati
             .FirstOrDefaultAsync(sc => sc.CampionatoId == campId && sc.SquadraId == squadra.Id);
 
-        if (legame == null) {
-            legame = new SquadraCampionato { 
-                CampionatoId = campId, 
+        if (legame == null)
+        {
+            legame = new SquadraCampionato
+            {
+                CampionatoId = campId,
                 SquadraId = squadra.Id,
                 // Inizializziamo a zero per sicurezza
-                Punti = 0, Vittorie = 0, Pareggi = 0, Sconfitte = 0,
-                GolFatti = 0, GolSubiti = 0, DifferenzaReti = 0, PartiteGiocate = 0
+                Punti = 0,
+                Vittorie = 0,
+                Pareggi = 0,
+                Sconfitte = 0,
+                GolFatti = 0,
+                GolSubiti = 0,
+                DifferenzaReti = 0,
+                PartiteGiocate = 0
             };
             db.SquadreCampionati.Add(legame);
             // Salviamo il legame per evitare che la prossima partita ne crei un altro uguale
@@ -278,16 +302,19 @@ public partial class Campionati(DialogService dialogService,
         legame.GolSubiti += golSubiti.Value;
         legame.DifferenzaReti = legame.GolFatti - legame.GolSubiti;
 
-        if (golFatti.Value > golSubiti.Value) { 
-            legame.Vittorie++; 
-            legame.Punti += 3; 
+        if (golFatti.Value > golSubiti.Value)
+        {
+            legame.Vittorie++;
+            legame.Punti += 3;
         }
-        else if (golFatti.Value == golSubiti.Value) { 
-            legame.Pareggi++; 
-            legame.Punti += 1; 
+        else if (golFatti.Value == golSubiti.Value)
+        {
+            legame.Pareggi++;
+            legame.Punti += 1;
         }
-        else { 
-            legame.Sconfitte++; 
+        else
+        {
+            legame.Sconfitte++;
         }
     }
 
@@ -376,6 +403,33 @@ public partial class Campionati(DialogService dialogService,
             await Grid.Reload();
         }
     }
+
+    // Passi il contenuto del JSON e l'ID del campionato a cui appartiene
+    public async Task ImportaDatiCampionato(string jsonContent, int campionatoId)
+    {
+        try
+        {
+            // Usa JsonSerializer di System.Text.Json
+            var partiteJson = JsonSerializer.Deserialize<List<Partita>>(jsonContent,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+            if (partiteJson != null)
+            {
+                foreach (var p in partiteJson)
+                {
+                    p.CampionatoId = campionatoId;
+                    db.Partite.Add(p);
+                }
+
+                await db.SaveChangesAsync();
+                notificationService.Notify(NotificationSeverity.Success, "Successo", "Importazione completata.");
+            }
+        }
+        catch (Exception ex)
+        {
+            notificationService.Notify(NotificationSeverity.Error, "Errore", ex.Message);
+        }
+    }
 }
 
 
@@ -388,4 +442,14 @@ public class PartitaDTO
     public string SquadraTrasferta { get; set; } = string.Empty;
     public int? GolCasa { get; set; }
     public int? GolTrasferta { get; set; }
+    public List<MarcatoreDTO>? Marcatori { get; set; } = new();
+}
+
+public class MarcatoreDTO
+{
+    public string? Nome { get; set; }
+    public int Minuto { get; set; }
+    public int? Recupero { get; set; }
+    public bool Rigore { get; set; }
+    public string? SquadraNome { get; set; }
 }

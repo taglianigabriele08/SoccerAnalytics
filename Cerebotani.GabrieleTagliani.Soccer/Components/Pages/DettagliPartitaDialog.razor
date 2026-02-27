@@ -34,7 +34,7 @@
                         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
                             <RadzenIcon Icon="sports_soccer" Size="IconSize.Small" />
                             <RadzenText TextStyle="TextStyle.Body2">
-                                @m.Nome (@m.Minuto') @(m.Rigore ? "(R)" : "")
+                                @m.Nome (@m.Minuto' @(m.Recupero.HasValue ? $"+{m.Recupero}" : "")) @(m.Rigore ? "(R)" : "")
                             </RadzenText>
                         </RadzenStack>
                     }
@@ -46,7 +46,7 @@
                     {
                         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
                             <RadzenText TextStyle="TextStyle.Body2">
-                                @(m.Rigore ? "(R)" : "") @m.Nome (@m.Minuto')
+                                @(m.Rigore ? "(R)" : "") @m.Nome (@m.Minuto' @(m.Recupero.HasValue ? $"+{m.Recupero}" : ""))
                             </RadzenText>
                             <RadzenIcon Icon="sports_soccer" Size="IconSize.Small" />
                         </RadzenStack>
