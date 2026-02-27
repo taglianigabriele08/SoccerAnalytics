@@ -1,0 +1,32 @@
+@page "/calendario-visivo/{CampionatoId:int}"
+@inherits CalendarioVisivoBase
+
+<RadzenScheduler @ref="scheduler" style="height: 768px;" TItem="Partita" Data=@partite 
+    StartProperty="Data" EndProperty="Fine" TextProperty="TitoloCalendario"
+    SelectedIndex="2" 
+    AppointmentMouseEnter="@(args => ShowTooltip(args.Element, args.Data))" 
+    AppointmentMouseLeave=@OnAppointmentMouseLeave>
+    <RadzenDayView />
+    <RadzenWeekView />
+    <RadzenMonthView />
+    <RadzenYearView />
+</RadzenScheduler>
+
+@code {
+    void ShowTooltip(ElementReference element, Partita partita)
+    {
+        TooltipService.Open(element, ds => 
+            @<RadzenStack Orientation="Orientation.Vertical" Gap="5px" class="rz-p-2" Style="min-width: 200px;">
+                <RadzenText TextStyle="TextStyle.Caption" Style="color: var(--rz-text-secondary-color);">
+                    @partita.Data.ToString("dd MMMM yyyy - HH:mm")
+                </RadzenText>
+                <RadzenText TextStyle="TextStyle.Subtitle1">
+                    <strong>@partita.SquadraCasa</strong> vs <strong>@partita.SquadraTrasferta</strong>
+                </RadzenText>
+                <RadzenBadge BadgeStyle="BadgeStyle.Primary" 
+                             Text="@(partita.GolCasa != null ? $"{partita.GolCasa} - {partita.GolTrasferta}" : "Da giocare")" 
+                             Style="width: fit-content;" />
+            </RadzenStack>, 
+            new TooltipOptions { Position = TooltipPosition.Top, Duration = null });
+    }
+}

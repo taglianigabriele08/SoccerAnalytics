@@ -13,4 +13,7 @@ public class Partita
     public Campionato? Campionato { get; set; }
 
     public List<Marcatore> Marcatori { get; set; } = new();
+
+    public DateTime Fine => Data.AddHours(2); 
+    public string CalendarioMatches => $"{SquadraCasa} {GolCasa}-{GolTrasferta} {SquadraTrasferta}";
 }

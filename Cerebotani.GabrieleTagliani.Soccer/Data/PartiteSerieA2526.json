@@ -53,220 +53,2241 @@
   { "giornata": 1, "data": "2025-08-25", "squadraCasa": "Inter", "squadraTrasferta": "Torino", "golCasa": 5, "golTrasferta": 0,
     "marcatori": [
       { "nome": "A. Bastoni", "minuto": 18, "rigore": false, "squadraNome": "Inter" },
-      { "nome": "M. Thuram", "minuto": 36, "minuto": 62, "rigore": false, "squadraNome": "Inter" }, 
+      { "nome": "M. Thuram", "minuto": 36, "rigore": false, "squadraNome": "Inter" }, 
       { "nome": "L. Martínez", "minuto": 52, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "M. Thuram", "minuto": 62, "rigore": false, "squadraNome": "Inter" },
       { "nome": "A. Bonny", "minuto": 72, "rigore": false, "squadraNome": "Inter" }
     ] 
   },
 
-  { "giornata": 2, "data": "2025-08-29", "squadraCasa": "Cremonese", "squadraTrasferta": "Sassuolo", "golCasa": 3, "golTrasferta": 2 },
-  { "giornata": 2, "data": "2025-08-29", "squadraCasa": "Lecce", "squadraTrasferta": "Milan", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 2, "data": "2025-08-30", "squadraCasa": "Bologna", "squadraTrasferta": "Como", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 2, "data": "2025-08-30", "squadraCasa": "Parma", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 2, "data": "2025-08-30", "squadraCasa": "Napoli", "squadraTrasferta": "Cagliari", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 2, "data": "2025-08-31", "squadraCasa": "Pisa", "squadraTrasferta": "Roma", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 2, "data": "2025-08-31", "squadraCasa": "Torino", "squadraTrasferta": "Fiorentina", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 2, "data": "2025-08-31", "squadraCasa": "Genoa", "squadraTrasferta": "Juventus", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 2, "data": "2025-08-31", "squadraCasa": "Inter", "squadraTrasferta": "Udinese", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 2, "data": "2025-08-31", "squadraCasa": "Lazio", "squadraTrasferta": "Verona", "golCasa": 4, "golTrasferta": 0 },
+  {
+    "giornata": 2,
+    "data": "2025-08-29",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 3,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "F. Terracciano", "minuto": 37, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "F. Vázquez", "minuto": 39, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "A. Pinamonti", "minuto": 63, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "D. Berardi", "minuto": 73, "rigore": true, "squadraNome": "Sassuolo" },
+      { "nome": "M. De Luca", "minuto": 90, "recupero": 3, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-30",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Milan",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Loftus-Cheek", "minuto": 66, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Pulisic", "minuto": 86, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-30",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Como",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "R. Orsolini", "minuto": 59, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-30",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Pašalić", "minuto": 79, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "P. Cutrone", "minuto": 85, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-30",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "F. Anguissa", "minuto": 90, "recupero": 5, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-31",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Roma",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Soulé", "minuto": 55, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-31",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "D. Vlahovic", "minuto": 73, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-31",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-31",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "D. Dumfries", "minuto": 17, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "K. Davis", "minuto": 29, "rigore": true, "squadraNome": "Udinese" },
+      { "nome": "A. Atta", "minuto": 40, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 2,
+    "data": "2025-08-31",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Hellas Verona",
+    "golCasa": 4,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "M. Guendouzi", "minuto": 3, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "M. Zaccagni", "minuto": 10, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "V. Castellanos", "minuto": 41, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "B. Dia", "minuto": 82, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
 
-  { "giornata": 3, "data": "2025-09-13", "squadraCasa": "Cagliari", "squadraTrasferta": "Parma", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 3, "data": "2025-09-13", "squadraCasa": "Juventus", "squadraTrasferta": "Inter", "golCasa": 4, "golTrasferta": 3 },
-  { "giornata": 3, "data": "2025-09-13", "squadraCasa": "Fiorentina", "squadraTrasferta": "Napoli", "golCasa": 1, "golTrasferta": 3 },
-  { "giornata": 3, "data": "2025-09-14", "squadraCasa": "Roma", "squadraTrasferta": "Torino", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 3, "data": "2025-09-14", "squadraCasa": "Atalanta", "squadraTrasferta": "Lecce", "golCasa": 4, "golTrasferta": 1 },
-  { "giornata": 3, "data": "2025-09-14", "squadraCasa": "Pisa", "squadraTrasferta": "Udinese", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 3, "data": "2025-09-14", "squadraCasa": "Sassuolo", "squadraTrasferta": "Lazio", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 3, "data": "2025-09-15", "squadraCasa": "Milan", "squadraTrasferta": "Bologna", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 3, "data": "2025-09-15", "squadraCasa": "Verona", "squadraTrasferta": "Cremonese", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 3, "data": "2025-09-15", "squadraCasa": "Como", "squadraTrasferta": "Genoa", "golCasa": 1, "golTrasferta": 1 },
+  {
+    "giornata": 3,
+    "data": "2025-09-13",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Parma",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "Y. Mina", "minuto": 33, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "M. Felici", "minuto": 77, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-13",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Inter",
+    "golCasa": 4,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "L. Kelly", "minuto": 14, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "H. Calhanoglu", "minuto": 30, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "K. Yildiz", "minuto": 38, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "H. Calhanoglu", "minuto": 65, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "M. Thuram", "minuto": 76, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "K. Thuram", "minuto": 82, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "V. Adzic", "minuto": 90, "recupero": 1, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-13",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 1,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "K. De Bruyne", "minuto": 6, "rigore": true, "squadraNome": "Napoli" },
+      { "nome": "R. Hojlund", "minuto": 14, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "S. Beukema", "minuto": 51, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "L. Ranieri", "minuto": 79, "rigore": false, "squadraNome": "Fiorentina" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-14",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Torino",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Simeone", "minuto": 59, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-14",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 4,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Scalvini", "minuto": 37, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "C. De Ketelaere", "minuto": 51, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "N. Zalewski", "minuto": 70, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "C. De Ketelaere", "minuto": 73, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "K. N'Dri", "minuto": 82, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-14",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "Iker Bravo", "minuto": 14, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-14",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "A. Fadera", "minuto": 70, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-14",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Modric", "minuto": 61, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-15",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 3,
+    "data": "2025-09-15",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "Nico Paz", "minuto": 13, "rigore": false, "squadraNome": "Como" },
+      { "nome": "C. Ekuban", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
 
-  { "giornata": 4, "data": "2025-09-19", "squadraCasa": "Lecce", "squadraTrasferta": "Cagliari", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 4, "data": "2025-09-20", "squadraCasa": "Bologna", "squadraTrasferta": "Genoa", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 4, "data": "2025-09-20", "squadraCasa": "Verona", "squadraTrasferta": "Juventus", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 4, "data": "2025-09-20", "squadraCasa": "Udinese", "squadraTrasferta": "Milan", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 4, "data": "2025-09-21", "squadraCasa": "Lazio", "squadraTrasferta": "Roma", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 4, "data": "2025-09-21", "squadraCasa": "Torino", "squadraTrasferta": "Atalanta", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 4, "data": "2025-09-21", "squadraCasa": "Cremonese", "squadraTrasferta": "Parma", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 4, "data": "2025-09-21", "squadraCasa": "Fiorentina", "squadraTrasferta": "Como", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 4, "data": "2025-09-22", "squadraCasa": "Inter", "squadraTrasferta": "Sassuolo", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 4, "data": "2025-09-22", "squadraCasa": "Napoli", "squadraTrasferta": "Pisa", "golCasa": 3, "golTrasferta": 2 },
+  {
+    "giornata": 4,
+    "data": "2025-09-19",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "Tiago Gabriel", "minuto": 5, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "A. Belotti", "minuto": 33, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "A. Belotti", "minuto": 71, "rigore": true, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-20",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "V. Ellertsson", "minuto": 63, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "S. Castro", "minuto": 73, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "R. Orsolini", "minuto": 90, "recupero": 9, "rigore": true, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-20",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Conceição", "minuto": 19, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "G. Orban", "minuto": 44, "rigore": true, "squadraNome": "Verona" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-21",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Milan",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "C. Pulisic", "minuto": 40, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "Y. Fofana", "minuto": 46, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Pulisic", "minuto": 53, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-21",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Roma",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "Lo. Pellegrini", "minuto": 38, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-21",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Parma",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-21",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "N. Krstovic", "minuto": 31, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "K. Sulemana", "minuto": 35, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "N. Krstovic", "minuto": 38, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-22",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Como",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Mandragora", "minuto": 6, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "M. Kempf", "minuto": 67, "rigore": false, "squadraNome": "Como" },
+      { "nome": "J. Addai", "minuto": 90, "recupero": 5, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-22",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Dimarco", "minuto": 14, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "T. Muharemović (AU)", "minuto": 81, "rigore": false, "squadraNome": "Inter", "nota": "Autogol" },
+      { "nome": "W. Cheddira", "minuto": 84, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 4,
+    "data": "2025-09-22",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 3,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "B. Gilmour", "minuto": 40, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "M. Nzola", "minuto": 60, "rigore": true, "squadraNome": "Pisa" },
+      { "nome": "L. Spinazzola", "minuto": 73, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "L. Lucca", "minuto": 83, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "L. Lorran", "minuto": 90, "rigore": false, "squadraNome": "Pisa" }
+    ]
+  },
 
-  { "giornata": 5, "data": "2025-09-27", "squadraCasa": "Como", "squadraTrasferta": "Cremonese", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 5, "data": "2025-09-27", "squadraCasa": "Juventus", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 5, "data": "2025-09-27", "squadraCasa": "Cagliari", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 5, "data": "2025-09-28", "squadraCasa": "Sassuolo", "squadraTrasferta": "Udinese", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 5, "data": "2025-09-28", "squadraCasa": "Pisa", "squadraTrasferta": "Fiorentina", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 5, "data": "2025-09-28", "squadraCasa": "Roma", "squadraTrasferta": "Verona", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 5, "data": "2025-09-28", "squadraCasa": "Lecce", "squadraTrasferta": "Bologna", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 5, "data": "2025-09-29", "squadraCasa": "Milan", "squadraTrasferta": "Napoli", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 5, "data": "2025-09-29", "squadraCasa": "Parma", "squadraTrasferta": "Torino", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 5, "data": "2025-09-29", "squadraCasa": "Genoa", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 3 },
+  {
+    "giornata": 5,
+    "data": "2025-09-27",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "Nico Paz", "minuto": 32, "rigore": false, "squadraNome": "Como" },
+      { "nome": "F. Baschirotto", "minuto": 69, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-27",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "K. Sulemana", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "J. Cabal", "minuto": 78, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-27",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Inter",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 9, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "F. Pio Esposito", "minuto": 82, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-28",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Laurienté", "minuto": 8, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "I. Koné", "minuto": 12, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "K. Davis", "minuto": 55, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "E. Iannoni", "minuto": 81, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-28",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-28",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Verona",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "A. Dovbyk", "minuto": 8, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "M. Soulé", "minuto": 79, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-28",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "L. Coulibaly", "minuto": 14, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "R. Orsolini", "minuto": 45, "recupero": 1, "rigore": true, "squadraNome": "Bologna" },
+      { "nome": "J. Odgaard", "minuto": 71, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "F. Camarda", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-28",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Saelemaekers", "minuto": 3, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Pulisic", "minuto": 32, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "K. De Bruyne", "minuto": 61, "rigore": true, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-29",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Torino",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Pellegrino", "minuto": 36, "rigore": true, "squadraNome": "Parma" },
+      { "nome": "C. Ngonge", "minuto": 50, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "M. Pellegrino", "minuto": 73, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 5,
+    "data": "2025-09-29",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "M. Cancellieri", "minuto": 4, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "V. Castellanos", "minuto": 30, "rigore": true, "squadraNome": "Lazio" },
+      { "nome": "M. Zaccagni", "minuto": 63, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
 
-  { "giornata": 6, "data": "2025-10-03", "squadraCasa": "Verona", "squadraTrasferta": "Sassuolo", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-04", "squadraCasa": "Parma", "squadraTrasferta": "Lecce", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-04", "squadraCasa": "Lazio", "squadraTrasferta": "Torino", "golCasa": 3, "golTrasferta": 3 },
-  { "giornata": 6, "data": "2025-10-04", "squadraCasa": "Inter", "squadraTrasferta": "Cremonese", "golCasa": 4, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-04", "squadraCasa": "Atalanta", "squadraTrasferta": "Como", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-05", "squadraCasa": "Udinese", "squadraTrasferta": "Cagliari", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-05", "squadraCasa": "Bologna", "squadraTrasferta": "Pisa", "golCasa": 4, "golTrasferta": 0 },
-  { "giornata": 6, "data": "2025-10-05", "squadraCasa": "Fiorentina", "squadraTrasferta": "Roma", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 6, "data": "2025-10-05", "squadraCasa": "Napoli", "squadraTrasferta": "Genoa", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 6, "data": "2025-10-05", "squadraCasa": "Juventus", "squadraTrasferta": "Milan", "golCasa": 0, "golTrasferta": 0 },
+  {
+    "giornata": 6,
+    "data": "2025-10-03",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Pinamonti", "minuto": 71, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-04",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Torino",
+    "golCasa": 3,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "G. Simeone", "minuto": 16, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "M. Cancellieri", "minuto": 25, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "M. Cancellieri", "minuto": 40, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "C. Adams", "minuto": 73, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "S. Coco", "minuto": 90, "recupero": 3, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "D. Cataldi", "minuto": 90, "recupero": 13, "rigore": true, "squadraNome": "Lazio" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-04",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Sottil", "minuto": 38, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-04",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 4,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 6, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "A. Bonny", "minuto": 38, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "F. Dimarco", "minuto": 55, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "N. Barella", "minuto": 57, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "F. Bonazzoli", "minuto": 88, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-04",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Como",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Samardžić", "minuto": 6, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "M. Perrone", "minuto": 19, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-05",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Borrelli", "minuto": 25, "rigore": false, "squadraNome": "Cagliari" },     
+      { "nome": "C. Kabasele", "minuto": 58, "rigore": false, "squadraNome": "Udinese" }   
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-05",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 4,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "N. Cambiaghi", "minuto": 24, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "N. Moro", "minuto": 38, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "R. Orsolini", "minuto": 40, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "J. Odgaard", "minuto": 54, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-05",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Roma",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Kean", "minuto": 15, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "M. Soulé", "minuto": 23, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "B. Cristante", "minuto": 31, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-05",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "J. Ekhator", "minuto": 34, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "F. Anguissa", "minuto": 58, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "R. Hojlund", "minuto": 75, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 6,
+    "data": "2025-10-05",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Milan",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
   
-  { "giornata": 7, "data": "2025-10-18", "squadraCasa": "Lecce", "squadraTrasferta": "Sassuolo", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-18", "squadraCasa": "Pisa", "squadraTrasferta": "Verona", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-18", "squadraCasa": "Torino", "squadraTrasferta": "Napoli", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-18", "squadraCasa": "Roma", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 7, "data": "2025-10-19", "squadraCasa": "Como", "squadraTrasferta": "Juventus", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-19", "squadraCasa": "Genoa", "squadraTrasferta": "Parma", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-19", "squadraCasa": "Cagliari", "squadraTrasferta": "Bologna", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 7, "data": "2025-10-19", "squadraCasa": "Atalanta", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 7, "data": "2025-10-19", "squadraCasa": "Milan", "squadraTrasferta": "Fiorentina", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 7, "data": "2025-10-20", "squadraCasa": "Cremonese", "squadraTrasferta": "Udinese", "golCasa": 1, "golTrasferta": 1 },
+  {
+    "giornata": 7,
+    "data": "2025-10-18",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "G. Simeone", "minuto": 32, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-18",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Inter",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Bonny", "minuto": 6, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-19",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "M. Kempf", "minuto": 4, "rigore": false, "squadraNome": "Como" },
+      { "nome": "Nico Paz", "minuto": 79, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-19",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Gosens", "minuto": 56, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "R. Leao", "minuto": 63, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "R. Leao", "minuto": 87, "rigore": true, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-19",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "E. Holm", "minuto": 31, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "R. Orsolini", "minuto": 80, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-20",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Terracciano", "minuto": 4, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "N. Zaniolo", "minuto": 51, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-18",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-18",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Verona",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-19",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Parma",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 7,
+    "data": "2025-10-19",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
 
-  { "giornata": 8, "data": "2025-10-24", "squadraCasa": "Milan", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 8, "data": "2025-10-25", "squadraCasa": "Parma", "squadraTrasferta": "Como", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 8, "data": "2025-10-25", "squadraCasa": "Udinese", "squadraTrasferta": "Lecce", "golCasa": 3, "golTrasferta": 2 },
-  { "giornata": 8, "data": "2025-10-25", "squadraCasa": "Napoli", "squadraTrasferta": "Inter", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 8, "data": "2025-10-25", "squadraCasa": "Cremonese", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 8, "data": "2025-10-26", "squadraCasa": "Torino", "squadraTrasferta": "Genoa", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 8, "data": "2025-10-26", "squadraCasa": "Verona", "squadraTrasferta": "Cagliari", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 8, "data": "2025-10-26", "squadraCasa": "Sassuolo", "squadraTrasferta": "Roma", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 8, "data": "2025-10-26", "squadraCasa": "Fiorentina", "squadraTrasferta": "Bologna", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 8, "data": "2025-10-26", "squadraCasa": "Lazio", "squadraTrasferta": "Juventus", "golCasa": 1, "golTrasferta": 0 },
+  {
+    "giornata": 8,
+    "data": "2025-10-24",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Leão", "minuto": 7, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "J. Cuadrado", "minuto": 60, "rigore": true, "squadraNome": "Pisa" },
+      { "nome": "M. Nzola", "minuto": 86, "rigore": false, "squadraNome": "Pisa" },
+      { "nome": "Z. Athekame", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-25",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Como",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": [
+      
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-25",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 3,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "J. Karlström", "minuto": 18, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "K. Davis", "minuto": 39, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "M. Berisha", "minuto": 59, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "A. Buksa", "minuto": 89, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "K. N'Dri", "minuto": 90, "recupero": 6, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-25",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Inter",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "K. De Bruyne", "minuto": 34, "rigore": true, "squadraNome": "Napoli" },
+      { "nome": "S. McTominay", "minuto": 54, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "H. Calhanoglu", "minuto": 59, "rigore": true, "squadraNome": "Inter" },
+      { "nome": "F. Anguissa", "minuto": 67, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-25",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "J. Vardy", "minuto": 77, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "M. Brescianini", "minuto": 84, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-26",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Thorsby", "minuto": 8, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "S. Sabelli (AU)", "minuto": 63, "squadraNome": "Torino" },
+      { "nome": "G. Maripán", "minuto": 90, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-26",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Gagliardini", "minuto": 23, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "G. Orban", "minuto": 59, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "R. Idrissi", "minuto": 77, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "M. Felici", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-26",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Roma",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "P. Dybala", "minuto": 16, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-26",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "S. Castro", "minuto": 26, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "N. Cambiaghi", "minuto": 53, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "A. Gudmundsson", "minuto": 74, "rigore": true, "squadraNome": "Fiorentina" },
+      { "nome": "M. Kean", "minuto": 90, "recupero": 5, "rigore": true, "squadraNome": "Fiorentina" }
+    ]
+  },
+  {
+    "giornata": 8,
+    "data": "2025-10-26",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "T. Basic", "minuto": 9, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
 
-  { "giornata": 9, "data": "2025-10-28", "squadraCasa": "Lecce", "squadraTrasferta": "Napoli", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 9, "data": "2025-10-28", "squadraCasa": "Atalanta", "squadraTrasferta": "Milan", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Roma", "squadraTrasferta": "Parma", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Como", "squadraTrasferta": "Verona", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Juventus", "squadraTrasferta": "Udinese", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Inter", "squadraTrasferta": "Fiorentina", "golCasa": 3, "golTrasferta": 0 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Genoa", "squadraTrasferta": "Cremonese", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 9, "data": "2025-10-29", "squadraCasa": "Bologna", "squadraTrasferta": "Torino", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 9, "data": "2025-10-30", "squadraCasa": "Cagliari", "squadraTrasferta": "Sassuolo", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 9, "data": "2025-10-30", "squadraCasa": "Pisa", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 0 },
+  {
+    "giornata": 9,
+    "data": "2025-10-28",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Anguissa", "minuto": 69, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-28",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Milan",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "S. Ricci", "minuto": 4, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "A. Lookman", "minuto": 35, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 3,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "H. Calhanoglu", "minuto": 67, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "L. Sucic", "minuto": 72, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "H. Calhanoglu", "minuto": 88, "rigore": true, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "D. Vlahovic", "minuto": 5, "rigore": true, "squadraNome": "Juventus" },
+      { "nome": "N. Zaniolo", "minuto": 45, "recupero": 4, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "F. Gatti", "minuto": 69, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "K. Yildiz", "minuto": 90, "recupero": 6, "rigore": true, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Verona",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Douvikas", "minuto": 9, "rigore": false, "squadraNome": "Como" },
+      { "nome": "S. Serdar", "minuto": 25, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "S. Posch", "minuto": 62, "rigore": false, "squadraNome": "Como" },
+      { "nome": "M. Vojvoda", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Parma",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Hermoso", "minuto": 64, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "A. Dovbyk", "minuto": 81, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "A. Circati", "minuto": 86, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "F. Bonazzoli", "minuto": 4, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "F. Bonazzoli", "minuto": 49, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-30",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "A. Lauriente", "minuto": 54, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "A. Pinamonti", "minuto": 65, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "S. Esposito", "minuto": 73, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-30",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 9,
+    "data": "2025-10-29",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Torino",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
 
-  { "giornata": 10, "data": "2025-11-01", "squadraCasa": "Udinese", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 10, "data": "2025-11-01", "squadraCasa": "Napoli", "squadraTrasferta": "Como", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 10, "data": "2025-11-01", "squadraCasa": "Cremonese", "squadraTrasferta": "Juventus", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 10, "data": "2025-11-02", "squadraCasa": "Verona", "squadraTrasferta": "Inter", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 10, "data": "2025-11-02", "squadraCasa": "Torino", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 10, "data": "2025-11-02", "squadraCasa": "Fiorentina", "squadraTrasferta": "Lecce", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 10, "data": "2025-11-02", "squadraCasa": "Parma", "squadraTrasferta": "Bologna", "golCasa": 1, "golTrasferta": 3 },
-  { "giornata": 10, "data": "2025-11-02", "squadraCasa": "Milan", "squadraTrasferta": "Roma", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 10, "data": "2025-11-03", "squadraCasa": "Sassuolo", "squadraTrasferta": "Genoa", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 10, "data": "2025-11-03", "squadraCasa": "Lazio", "squadraTrasferta": "Cagliari", "golCasa": 2, "golTrasferta": 0 },
+  {
+    "giornata": 10,
+    "data": "2025-11-01",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "N. Zaniolo", "minuto": 40, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-01",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Como",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-01",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "F. Kostic", "minuto": 2, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "A. Cambiaso", "minuto": 68, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "J. Vardy", "minuto": 83, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-02",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Inter",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "P. Zielinski", "minuto": 17, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "S. Giovane", "minuto": 40, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "M. Frese (AU)", "minuto": 90, "recupero": 3, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-02",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Berisha", "minuto": 24, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-02",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "S. Moreo", "minuto": 13, "rigore": false, "squadraNome": "Pisa" },
+      { "nome": "S. Moreo", "minuto": 29, "rigore": true, "squadraNome": "Pisa" },
+      { "nome": "G. Simeone", "minuto": 42, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "C. Adams", "minuto": 45, "recupero": 3, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-02",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 1,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "A. Bernabé", "minuto": 1, "rigore": false, "squadraNome": "Parma" },
+      { "nome": "S. Castro", "minuto": 18, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "S. Castro", "minuto": 69, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "J. Miranda", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-02",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Roma",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "S. Pavlovic", "minuto": 39, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-03",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Malinovskyi", "minuto": 18, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "D. Berardi", "minuto": 47, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "L. Ostigard", "minuto": 90, "recupero": 3, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 10,
+    "data": "2025-11-03",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "G. Isaksen", "minuto": 65, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "M. Zaccagni", "minuto": 90, "recupero": 1, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
 
-  { "giornata": 11, "data": "2025-11-07", "squadraCasa": "Pisa", "squadraTrasferta": "Cremonese", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-08", "squadraCasa": "Como", "squadraTrasferta": "Cagliari", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-08", "squadraCasa": "Lecce", "squadraTrasferta": "Verona", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-08", "squadraCasa": "Juventus", "squadraTrasferta": "Torino", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-08", "squadraCasa": "Parma", "squadraTrasferta": "Milan", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 11, "data": "2025-11-09", "squadraCasa": "Atalanta", "squadraTrasferta": "Sassuolo", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 11, "data": "2025-11-09", "squadraCasa": "Bologna", "squadraTrasferta": "Napoli", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-09", "squadraCasa": "Genoa", "squadraTrasferta": "Fiorentina", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 11, "data": "2025-11-09", "squadraCasa": "Roma", "squadraTrasferta": "Udinese", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 11, "data": "2025-11-09", "squadraCasa": "Inter", "squadraTrasferta": "Lazio", "golCasa": 2, "golTrasferta": 0 },
+  {
+    "giornata": 11,
+    "data": "2025-11-07",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "I. Touré", "minuto": 76, "rigore": false, "squadraNome": "Pisa" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-08",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-08",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Verona",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-08",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Torino",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-08",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Milan",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "A. Saelemaekers", "minuto": 12, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "R. Leao", "minuto": 25, "rigore": true, "squadraNome": "Milan" },
+      { "nome": "A. Bernabé", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Parma" },
+      { "nome": "E. Del Prato", "minuto": 62, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-09",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "D. Berardi", "minuto": 29, "rigore": true, "squadraNome": "Sassuolo" },
+      { "nome": "A. Pinamonti", "minuto": 47, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "D. Berardi", "minuto": 67, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-09",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "T. Dallinga", "minuto": 50, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "J. Lucumí", "minuto": 66, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-09",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "L. Ostigard", "minuto": 15, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "A. Gudmundsson", "minuto": 20, "rigore": true, "squadraNome": "Fiorentina" },
+      { "nome": "R. Piccoli", "minuto": 58, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "L. Colombo", "minuto": 61, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-09",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Pellegrini", "minuto": 42, "rigore": true, "squadraNome": "Roma" },
+      { "nome": "Z. Celik", "minuto": 61, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 11,
+    "data": "2025-11-09",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 3, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "A. Bonny", "minuto": 62, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
 
-  { "giornata": 12, "data": "2025-11-22", "squadraCasa": "Cagliari", "squadraTrasferta": "Genoa", "golCasa": 3, "golTrasferta": 3 },
-  { "giornata": 12, "data": "2025-11-22", "squadraCasa": "Udinese", "squadraTrasferta": "Bologna", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 12, "data": "2025-11-22", "squadraCasa": "Fiorentina", "squadraTrasferta": "Juventus", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 12, "data": "2025-11-22", "squadraCasa": "Napoli", "squadraTrasferta": "Atalanta", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 12, "data": "2025-11-23", "squadraCasa": "Verona", "squadraTrasferta": "Parma", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 12, "data": "2025-11-23", "squadraCasa": "Cremonese", "squadraTrasferta": "Roma", "golCasa": 1, "golTrasferta": 3 },
-  { "giornata": 12, "data": "2025-11-23", "squadraCasa": "Lazio", "squadraTrasferta": "Lecce", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 12, "data": "2025-11-23", "squadraCasa": "Inter", "squadraTrasferta": "Milan", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 12, "data": "2025-11-24", "squadraCasa": "Torino", "squadraTrasferta": "Como", "golCasa": 1, "golTrasferta": 5 },
-  { "giornata": 12, "data": "2025-11-24", "squadraCasa": "Sassuolo", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2 },
+  {
+    "giornata": 12,
+    "data": "2025-11-22",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 3,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "V. Vitinha", "minuto": 18, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "G. Borrelli", "minuto": 33, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "L. Ostigard", "minuto": 41, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "S. Esposito", "minuto": 43, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "G. Borrelli", "minuto": 61, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "A. Martin", "minuto": 83, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-22",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "T. Pobega", "minuto": 54, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "T. Pobega", "minuto": 60, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "F. Bernardeschi", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-22",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Kostic", "minuto": 45, "recupero": 7, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "R. Mandragora", "minuto": 49, "rigore": false, "squadraNome": "Fiorentina" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-22",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "D. Neres", "minuto": 17, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "D. Neres", "minuto": 38, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "N. Lang", "minuto": 45, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "G. Scamacca", "minuto": 52, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-23",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Parma",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Pellegrino", "minuto": 18, "rigore": false, "squadraNome": "Parma" },
+      { "nome": "S. Giovane", "minuto": 65, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "M. Pellegrino", "minuto": 80, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-23",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Roma",
+    "golCasa": 1,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "M. Soule", "minuto": 17, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "E. Ferguson", "minuto": 64, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "F. Wesley", "minuto": 69, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "F. Folino", "minuto": 90, "recupero": 3, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-23",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "M. Guendouzi", "minuto": 29, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "T. Noslin", "minuto": 90, "recupero": 6, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-23",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Milan",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "C. Pulisic", "minuto": 54, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-24",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Como",
+    "golCasa": 1,
+    "golTrasferta": 5,
+    "marcatori": [
+      { "nome": "J. Addai", "minuto": 36, "rigore": false, "squadraNome": "Como" },
+      { "nome": "N. Vlasic", "minuto": 45, "recupero": 4, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "J. Addai", "minuto": 52, "rigore": false, "squadraNome": "Como" },
+      { "nome": "J. Ramon", "minuto": 73, "rigore": false, "squadraNome": "Como" },
+      { "nome": "N. Paz", "minuto": 80, "rigore": false, "squadraNome": "Como" },
+      { "nome": "M. Baturina", "minuto": 86, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 12,
+    "data": "2025-11-24",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Nzola", "minuto": 4, "rigore": true, "squadraNome": "Pisa" },
+      { "nome": "N. Matic", "minuto": 6, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "H. Meister", "minuto": 81, "rigore": false, "squadraNome": "Pisa" },
+      { "nome": "K. Thorstvedt", "minuto": 90, "recupero": 5, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
 
-  { "giornata": 13, "data": "2025-11-28", "squadraCasa": "Como", "squadraTrasferta": "Sassuolo", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 13, "data": "2025-11-29", "squadraCasa": "Genoa", "squadraTrasferta": "Verona", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 13, "data": "2025-11-29", "squadraCasa": "Parma", "squadraTrasferta": "Udinese", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 13, "data": "2025-11-29", "squadraCasa": "Juventus", "squadraTrasferta": "Cagliari", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 13, "data": "2025-11-29", "squadraCasa": "Milan", "squadraTrasferta": "Lazio", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 13, "data": "2025-11-30", "squadraCasa": "Lecce", "squadraTrasferta": "Torino", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 13, "data": "2025-11-30", "squadraCasa": "Pisa", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 13, "data": "2025-11-30", "squadraCasa": "Atalanta", "squadraTrasferta": "Fiorentina", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 13, "data": "2025-11-30", "squadraCasa": "Roma", "squadraTrasferta": "Napoli", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 13, "data": "2025-12-01", "squadraCasa": "Bologna", "squadraTrasferta": "Cremonese", "golCasa": 1, "golTrasferta": 3 },
+  {
+    "giornata": 13,
+    "data": "2025-11-28",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "A. Douvikas", "minuto": 14, "rigore": false, "squadraNome": "Como" },
+      { "nome": "A. Moreno", "minuto": 53, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-29",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Verona",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Belghali", "minuto": 22, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "L. Colombo", "minuto": 40, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "M. Thorsby", "minuto": 62, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-29",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "N. Zaniolo", "minuto": 11, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "K. Davis", "minuto": 65, "rigore": true, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-29",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "S. Esposito", "minuto": 26, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "K. Yildiz", "minuto": 27, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "K. Yildiz", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-29",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "R. Leao", "minuto": 52, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-30",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Torino",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Coulibaly", "minuto": 20, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "L. Banda", "minuto": 22, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "C. Adams", "minuto": 57, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-30",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Inter",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 69, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "L. Martinez", "minuto": 83, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-30",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "O. Kossounou", "minuto": 41, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "A. Lookman", "minuto": 52, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-11-30",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "D. Neres", "minuto": 36, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 13,
+    "data": "2025-12-01",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 1,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "M. Payero", "minuto": 31, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "J. Vardy", "minuto": 36, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "R. Orsolini", "minuto": 45, "recupero": 3, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "J. Vardy", "minuto": 51, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
 
-  { "giornata": 14, "data": "2025-12-06", "squadraCasa": "Sassuolo", "squadraTrasferta": "Fiorentina", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 14, "data": "2025-12-06", "squadraCasa": "Inter", "squadraTrasferta": "Como", "golCasa": 4, "golTrasferta": 0 },
-  { "giornata": 14, "data": "2025-12-06", "squadraCasa": "Verona", "squadraTrasferta": "Atalanta", "golCasa": 3, "golTrasferta": 1 },
-  { "giornata": 14, "data": "2025-12-07", "squadraCasa": "Cremonese", "squadraTrasferta": "Lecce", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 14, "data": "2025-12-07", "squadraCasa": "Cagliari", "squadraTrasferta": "Roma", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 14, "data": "2025-12-07", "squadraCasa": "Lazio", "squadraTrasferta": "Bologna", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 14, "data": "2025-12-07", "squadraCasa": "Napoli", "squadraTrasferta": "Juventus", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 14, "data": "2025-12-08", "squadraCasa": "Pisa", "squadraTrasferta": "Parma", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 14, "data": "2025-12-08", "squadraCasa": "Udinese", "squadraTrasferta": "Genoa", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 14, "data": "2025-12-08", "squadraCasa": "Torino", "squadraTrasferta": "Milan", "golCasa": 2, "golTrasferta": 3 },
+  {
+    "giornata": 14,
+    "data": "2025-12-06",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Mandragora", "minuto": 9, "rigore": true, "squadraNome": "Fiorentina" },
+      { "nome": "C. Volpato", "minuto": 14, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "T. Muharemovic", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "I. Kone", "minuto": 65, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-06",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Como",
+    "golCasa": 4,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 11, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "M. Thuram", "minuto": 60, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "H. Calhanoglu", "minuto": 81, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "C. Augusto", "minuto": 87, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-06",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Belghali", "minuto": 28, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "S. Giovane", "minuto": 36, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "A. Bernede", "minuto": 72, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "G. Scamacca", "minuto": 82, "rigore": true, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-07",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 2,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "F. Bonazzoli", "minuto": 53, "rigore": true, "squadraNome": "Cremonese" },
+      { "nome": "A. Sanabria", "minuto": 78, "rigore": false, "squadraNome": "Cremonese" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-07",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Roma",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "G. Gaetano", "minuto": 82, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-07",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Isaksen", "minuto": 38, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "J. Odgaard", "minuto": 41, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-07",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Hojlund", "minuto": 7, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "K. Yildiz", "minuto": 59, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "R. Hojlund", "minuto": 79, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-08",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Parma",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "A. Benedyczak", "minuto": 40, "rigore": true, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-08",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Malinovskyi", "minuto": 35, "rigore": true, "squadraNome": "Genoa" },
+      { "nome": "J. Piotrowski", "minuto": 65, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "B. Norton-Cuffy", "minuto": 83, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 14,
+    "data": "2025-12-08",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Milan",
+    "golCasa": 2,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "N. Vlasic", "minuto": 10, "rigore": true, "squadraNome": "Torino" },
+      { "nome": "D. Zapata", "minuto": 17, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "A. Rabiot", "minuto": 24, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Pulisic", "minuto": 67, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Pulisic", "minuto": 77, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
 
-  { "giornata": 15, "data": "2025-12-12", "squadraCasa": "Lecce", "squadraTrasferta": "Pisa", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 15, "data": "2025-12-13", "squadraCasa": "Torino", "squadraTrasferta": "Cremonese", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 15, "data": "2025-12-13", "squadraCasa": "Parma", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 15, "data": "2025-12-13", "squadraCasa": "Atalanta", "squadraTrasferta": "Cagliari", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 15, "data": "2025-12-14", "squadraCasa": "Milan", "squadraTrasferta": "Sassuolo", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 15, "data": "2025-12-14", "squadraCasa": "Udinese", "squadraTrasferta": "Napoli", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 15, "data": "2025-12-14", "squadraCasa": "Fiorentina", "squadraTrasferta": "Verona", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 15, "data": "2025-12-14", "squadraCasa": "Genoa", "squadraTrasferta": "Inter", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 15, "data": "2025-12-14", "squadraCasa": "Bologna", "squadraTrasferta": "Juventus", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 15, "data": "2025-12-15", "squadraCasa": "Roma", "squadraTrasferta": "Como", "golCasa": 1, "golTrasferta": 0 },
+  {
+    "giornata": 15,
+    "data": "2025-12-12",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "N. Stulic", "minuto": 72, "rigore": false, "squadraNome": "Lecce" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-13",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "N. Vlasic", "minuto": 27, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-13",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "T. Noslin", "minuto": 82, "rigore": false, "squadraNome": "Lazio" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-13",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Scamacca", "minuto": 11, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "G. Gaetano", "minuto": 75, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "G. Scamacca", "minuto": 81, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-14",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "I. Kone", "minuto": 13, "rigore": false, "squadraNome": "Sassuolo" },
+      { "nome": "D. Bartesaghi", "minuto": 34, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "D. Bartesaghi", "minuto": 47, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "A. Lauriente", "minuto": 77, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-14",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Verona",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "G. Orban", "minuto": 43, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "U. Nunez (AU)", "minuto": 71, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "G. Orban", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Verona" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-14",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "J. Ekkelenkamp", "minuto": 74, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-14",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Inter",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "Y. Bisseck", "minuto": 6, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "L. Martinez", "minuto": 38, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "V. Vitinha", "minuto": 68, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-14",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "J. Cabal", "minuto": 64, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 15,
+    "data": "2025-12-15",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Como",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "F. Wesley", "minuto": 61, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
 
-  { "giornata": 16, "data": "2025-12-20", "squadraCasa": "Lazio", "squadraTrasferta": "Cremonese", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 16, "data": "2025-12-20", "squadraCasa": "Juventus", "squadraTrasferta": "Roma", "golCasa": 2, "golTrasferta": 1 },
-  { "giornata": 16, "data": "2025-12-21", "squadraCasa": "Cagliari", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 16, "data": "2025-12-21", "squadraCasa": "Sassuolo", "squadraTrasferta": "Torino", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 16, "data": "2025-12-21", "squadraCasa": "Fiorentina", "squadraTrasferta": "Udinese", "golCasa": 5, "golTrasferta": 1 },
-  { "giornata": 16, "data": "2025-12-21", "squadraCasa": "Genoa", "squadraTrasferta": "Atalanta", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 16, "data": "2026-01-14", "squadraCasa": "Napoli", "squadraTrasferta": "Parma", "golCasa": 0, "golTrasferta": 0 },
-  { "giornata": 16, "data": "2026-01-14", "squadraCasa": "Inter", "squadraTrasferta": "Lecce", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 16, "data": "2026-01-15", "squadraCasa": "Verona", "squadraTrasferta": "Bologna", "golCasa": 2, "golTrasferta": 3 },
-  { "giornata": 16, "data": "2026-01-15", "squadraCasa": "Como", "squadraTrasferta": "Milan", "golCasa": 1, "golTrasferta": 3 },
+  {
+    "giornata": 16,
+    "data": "2025-12-20",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 16,
+    "data": "2025-12-20",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Roma",
+    "golCasa": 2,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "F. Conceicao", "minuto": 44, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "L. Openda", "minuto": 70, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "T. Baldanzi", "minuto": 75, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2025-12-21",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Tramoni", "minuto": 45, "rigore": true, "squadraNome": "Pisa" },
+      { "nome": "M. Folorunsho", "minuto": 59, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "S. Kilicsoy", "minuto": 71, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "S. Moreo", "minuto": 89, "rigore": false, "squadraNome": "Pisa" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2025-12-21",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Torino",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "N. Vlasic", "minuto": 66, "rigore": true, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2025-12-21",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 5,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Mandragora", "minuto": 22, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "A. Gudmundsson", "minuto": 43, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "C. Ndour", "minuto": 45, "recupero": 6, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "M. Kean", "minuto": 57, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "O. Solet", "minuto": 67, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "M. Kean", "minuto": 69, "rigore": false, "squadraNome": "Fiorentina" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2025-12-21",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "I. Hien", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2026-01-14",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Parma",
+    "golCasa": 0,
+    "golTrasferta": 0,
+    "marcatori": []
+  },
+  {
+    "giornata": 16,
+    "data": "2026-01-14",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "F. Pio Esposito", "minuto": 78, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2026-01-15",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 2,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "G. Orban", "minuto": 14, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "R. Orsolini", "minuto": 22, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "J. Odgaard", "minuto": 29, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "S. Castro", "minuto": 44, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "R. Freuler (AU)", "minuto": 72, "rigore": false, "squadraNome": "Verona" }
+    ]
+  },
+  {
+    "giornata": 16,
+    "data": "2026-01-15",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Milan",
+    "golCasa": 1,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "M. Kempf", "minuto": 10, "rigore": false, "squadraNome": "Como" },
+      { "nome": "C. Nkunku", "minuto": 45, "recupero": 1, "rigore": true, "squadraNome": "Milan" },
+      { "nome": "A. Rabiot", "minuto": 55, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "A. Rabiot", "minuto": 88, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
 
-  { "giornata": 17, "data": "2025-12-27", "squadraCasa": "Parma", "squadraTrasferta": "Fiorentina", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 17, "data": "2025-12-27", "squadraCasa": "Torino", "squadraTrasferta": "Cagliari", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 17, "data": "2025-12-27", "squadraCasa": "Lecce", "squadraTrasferta": "Como", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 17, "data": "2025-12-27", "squadraCasa": "Udinese", "squadraTrasferta": "Lazio", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 17, "data": "2025-12-27", "squadraCasa": "Pisa", "squadraTrasferta": "Juventus", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 17, "data": "2025-12-28", "squadraCasa": "Milan", "squadraTrasferta": "Verona", "golCasa": 3, "golTrasferta": 0 },
-  { "giornata": 17, "data": "2025-12-28", "squadraCasa": "Cremonese", "squadraTrasferta": "Napoli", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 17, "data": "2025-12-28", "squadraCasa": "Bologna", "squadraTrasferta": "Sassuolo", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 17, "data": "2025-12-28", "squadraCasa": "Atalanta", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 17, "data": "2025-12-29", "squadraCasa": "Roma", "squadraTrasferta": "Genoa", "golCasa": 3, "golTrasferta": 1 },
+  {
+    "giornata": 17,
+    "data": "2025-12-27",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "O. Sorensen", "minuto": 49, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-27",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "N. Vlasic", "minuto": 27, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "M. Prati", "minuto": 45, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "S. Kilicsoy", "minuto": 66, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-27",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Como",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "Nico Paz", "minuto": 20, "rigore": false, "squadraNome": "Como" },
+      { "nome": "J. Ramon", "minuto": 67, "rigore": false, "squadraNome": "Como" },
+      { "nome": "A. Douvikas", "minuto": 76, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-27",
+    "squadraCasa": "Udinese",
+    "squadraTrasferta": "Lazio",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "O. Solet (AU)", "minuto": 80, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "K. Davis", "minuto": 90, "recupero": 6, "rigore": false, "squadraNome": "Udinese" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-27",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "P. Kalulu", "minuto": 74, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "K. Yildiz", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-28",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Verona",
+    "golCasa": 3,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "C. Pulisic", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Milan" },
+      { "nome": "C. Nkunku", "minuto": 48, "rigore": true, "squadraNome": "Milan" },
+      { "nome": "C. Nkunku", "minuto": 53, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-28",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "R. Hojlund", "minuto": 13, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "R. Hojlund", "minuto": 45, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-28",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Sassuolo",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "G. Fabbian", "minuto": 47, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "T. Muharemovic", "minuto": 64, "rigore": false, "squadraNome": "Sassuolo" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-28",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Inter",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Martinez", "minuto": 65, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 17,
+    "data": "2025-12-29",
+    "squadraCasa": "Roma",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "M. Soulé", "minuto": 14, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "M. Koné", "minuto": 19, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "E. Ferguson", "minuto": 31, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "J. Ekhator", "minuto": 87, "rigore": false, "squadraNome": "Genoa" }
+    ]
+  },
 
-  { "giornata": 18, "data": "2026-01-02", "squadraCasa": "Cagliari", "squadraTrasferta": "Milan", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 18, "data": "2026-01-03", "squadraCasa": "Como", "squadraTrasferta": "Udinese", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 18, "data": "2026-01-03", "squadraCasa": "Sassuolo", "squadraTrasferta": "Parma", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 18, "data": "2026-01-03", "squadraCasa": "Genoa", "squadraTrasferta": "Pisa", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 18, "data": "2026-01-03", "squadraCasa": "Juventus", "squadraTrasferta": "Lecce", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 18, "data": "2026-01-03", "squadraCasa": "Atalanta", "squadraTrasferta": "Roma", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 18, "data": "2026-01-04", "squadraCasa": "Lazio", "squadraTrasferta": "Napoli", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 18, "data": "2026-01-04", "squadraCasa": "Fiorentina", "squadraTrasferta": "Cremonese", "golCasa": 1, "golTrasferta": 0 },
-  { "giornata": 18, "data": "2026-01-04", "squadraCasa": "Verona", "squadraTrasferta": "Torino", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 18, "data": "2026-01-04", "squadraCasa": "Inter", "squadraTrasferta": "Bologna", "golCasa": 3, "golTrasferta": 1 },
+  {
+    "giornata": 18,
+    "data": "2026-01-02",
+    "squadraCasa": "Cagliari",
+    "squadraTrasferta": "Milan",
+    "golCasa": 0,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "R. Leão", "minuto": 50, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-03",
+    "squadraCasa": "Como",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Da Cunha", "minuto": 18, "rigore": true, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-03",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Parma",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "K. Thorstvedt", "minuto": 12, "rigore": true, "squadraNome": "Sassuolo" },
+      { "nome": "M. Pellegrino", "minuto": 24, "rigore": false, "squadraNome": "Parma" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-03",
+    "squadraCasa": "Genoa",
+    "squadraTrasferta": "Pisa",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Colombo", "minuto": 15, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "M. Leris", "minuto": 38, "rigore": false, "squadraNome": "Pisa" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-03",
+    "squadraCasa": "Juventus",
+    "squadraTrasferta": "Lecce",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Banda", "minuto": 45, "recupero": 1, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "W. McKennie", "minuto": 49, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-03",
+    "squadraCasa": "Atalanta",
+    "squadraTrasferta": "Roma",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "G. Scalvini", "minuto": 12, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-04",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Napoli",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "L. Spinazzola", "minuto": 13, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "A. Rrahmani", "minuto": 32, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-04",
+    "squadraCasa": "Fiorentina",
+    "squadraTrasferta": "Cremonese",
+    "golCasa": 1,
+    "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "M. Kean", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Fiorentina" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-04",
+    "squadraCasa": "Verona",
+    "squadraTrasferta": "Torino",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "G. Simeone", "minuto": 11, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "C. Casadei", "minuto": 87, "rigore": false, "squadraNome": "Torino" },
+      { "nome": "E. Njie", "minuto": 90, "recupero": 1, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 18,
+    "data": "2026-01-04",
+    "squadraCasa": "Inter",
+    "squadraTrasferta": "Bologna",
+    "golCasa": 3,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "P. Zielinski", "minuto": 40, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "L. Martínez", "minuto": 49, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "M. Thuram", "minuto": 74, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "S. Castro", "minuto": 83, "rigore": false, "squadraNome": "Bologna" }
+    ]
+  },
 
-  { "giornata": 19, "data": "2026-01-06", "squadraCasa": "Pisa", "squadraTrasferta": "Como", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 19, "data": "2026-01-06", "squadraCasa": "Lecce", "squadraTrasferta": "Roma", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-06", "squadraCasa": "Sassuolo", "squadraTrasferta": "Juventus", "golCasa": 0, "golTrasferta": 3 },
-  { "giornata": 19, "data": "2026-01-07", "squadraCasa": "Bologna", "squadraTrasferta": "Atalanta", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-07", "squadraCasa": "Napoli", "squadraTrasferta": "Verona", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-07", "squadraCasa": "Parma", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-07", "squadraCasa": "Torino", "squadraTrasferta": "Udinese", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-07", "squadraCasa": "Lazio", "squadraTrasferta": "Fiorentina", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-08", "squadraCasa": "Cremonese", "squadraTrasferta": "Cagliari", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 19, "data": "2026-01-08", "squadraCasa": "Milan", "squadraTrasferta": "Genoa", "golCasa": 1, "golTrasferta": 1 },
+  {
+    "giornata": 19,
+    "data": "2026-01-06",
+    "squadraCasa": "Pisa",
+    "squadraTrasferta": "Como",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "M. Perrone", "minuto": 69, "rigore": false, "squadraNome": "Como" },
+      { "nome": "A. Douvikas", "minuto": 76, "rigore": false, "squadraNome": "Como" },
+      { "nome": "A. Douvikas", "minuto": 90, "recupero": 6, "rigore": true, "squadraNome": "Como" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-06",
+    "squadraCasa": "Lecce",
+    "squadraTrasferta": "Roma",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "E. Ferguson", "minuto": 14, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "A. Dovbyk", "minuto": 71, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-06",
+    "squadraCasa": "Sassuolo",
+    "squadraTrasferta": "Juventus",
+    "golCasa": 0,
+    "golTrasferta": 3,
+    "marcatori": [
+      { "nome": "T. Muharemovic (AU)", "minuto": 16, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "F. Miretti", "minuto": 62, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "J. David", "minuto": 64, "rigore": false, "squadraNome": "Juventus" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-07",
+    "squadraCasa": "Bologna",
+    "squadraTrasferta": "Atalanta",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "N. Krstovic", "minuto": 37, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "N. Krstovic", "minuto": 60, "rigore": false, "squadraNome": "Atalanta" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-07",
+    "squadraCasa": "Napoli",
+    "squadraTrasferta": "Verona",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Frese", "minuto": 17, "rigore": false, "squadraNome": "Verona" },
+      { "nome": "G. Orban", "minuto": 28, "rigore": true, "squadraNome": "Verona" },
+      { "nome": "S. McTominay", "minuto": 54, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "G. Di Lorenzo", "minuto": 82, "rigore": false, "squadraNome": "Napoli" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-07",
+    "squadraCasa": "Lazio",
+    "squadraTrasferta": "Fiorentina",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "D. Cataldi", "minuto": 53, "rigore": false, "squadraNome": "Lazio" },
+      { "nome": "R. Gosens", "minuto": 57, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "A. Gudmundsson", "minuto": 90, "rigore": true, "squadraNome": "Fiorentina" },
+      { "nome": "R. Pedro", "minuto": 90, "recupero": 6, "rigore": true, "squadraNome": "Lazio" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-07",
+    "squadraCasa": "Parma",
+    "squadraTrasferta": "Inter",
+    "golCasa": 0,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "F. Dimarco", "minuto": 44, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "M. Thuram", "minuto": 90, "recupero": 8, "rigore": false, "squadraNome": "Inter" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-07",
+    "squadraCasa": "Torino",
+    "squadraTrasferta": "Udinese",
+    "golCasa": 1,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "N. Zaniolo", "minuto": 50, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "J. Ekkelenkamp", "minuto": 81, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "C. Casadei", "minuto": 86, "rigore": false, "squadraNome": "Torino" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-08",
+    "squadraCasa": "Cremonese",
+    "squadraTrasferta": "Cagliari",
+    "golCasa": 2,
+    "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "D. Johnsen", "minuto": 5, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "J. Vardy", "minuto": 29, "rigore": false, "squadraNome": "Cremonese" },
+      { "nome": "M. Adopo", "minuto": 51, "rigore": false, "squadraNome": "Cagliari" },
+      { "nome": "Y. Trepy", "minuto": 89, "rigore": false, "squadraNome": "Cagliari" }
+    ]
+  },
+  {
+    "giornata": 19,
+    "data": "2026-01-08",
+    "squadraCasa": "Milan",
+    "squadraTrasferta": "Genoa",
+    "golCasa": 1,
+    "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "L. Colombo", "minuto": 28, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "R. Leao", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Milan" }
+    ]
+  },
 
-  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Como", "squadraTrasferta": "Bologna", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Udinese", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Roma", "squadraTrasferta": "Sassuolo", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Atalanta", "squadraTrasferta": "Torino", "golCasa": 2, "golTrasferta": 0 },
-  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Lecce", "squadraTrasferta": "Parma", "golCasa": 1, "golTrasferta": 2 },
-  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Fiorentina", "squadraTrasferta": "Milan", "golCasa": 1, "golTrasferta": 1 },
-  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Verona", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 1 },
-  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Inter", "squadraTrasferta": "Napoli", "golCasa": 2, "golTrasferta": 2 },
-  { "giornata": 20, "data": "2026-01-12", "squadraCasa": "Genoa", "squadraTrasferta": "Cagliari", "golCasa": 3, "golTrasferta": 0 },
-  { "giornata": 20, "data": "2026-01-12", "squadraCasa": "Juventus", "squadraTrasferta": "Cremonese", "golCasa": 5, "golTrasferta": 0 },
+  
 
   { "giornata": 21, "data": "2026-01-16", "squadraCasa": "Pisa", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 1 },
   { "giornata": 21, "data": "2026-01-17", "squadraCasa": "Udinese", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 1 },
