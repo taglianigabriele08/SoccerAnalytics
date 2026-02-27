@@ -9,6 +9,7 @@ namespace Cerebotani.GabrieleTagliani.Soccer
 
         [Inject] protected ApplicationDbContext db { get; set; } = default!;
         [Inject] protected NavigationManager NavigationManager { get; set; } = default!;
+        [Inject] protected DialogService DialogService { get; set; } = default!;
 
         protected List<Partita>? Partite;
 
@@ -17,6 +18,7 @@ namespace Cerebotani.GabrieleTagliani.Soccer
             // Uso il DB direttamente: più semplice e niente errori HTTP
             Partite = await db.Partite
                 .Include(p => p.Marcatori)
+                .Include(p => p.Campionato)
                 .Where(p => p.CampionatoId == CampionatoId)
                 .OrderBy(p => p.Giornata)
                 .ToListAsync();
