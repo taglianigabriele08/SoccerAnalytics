@@ -1,7 +1,53 @@
-<h3>DettagliPartitaDialog</h3>
+@using System.Text.RegularExpressions
+<RadzenStack Gap="1.5rem" Class="rz-p-4">
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center" Gap="2rem">
+        <RadzenStack AlignItems="AlignItems.Center" Style="width: 150px;">
+            <RadzenImage Path="@($"/img/logo/{Match.SquadraCasa}.png")" Style="width: 80px; height: 80px;" />
+            <RadzenText TextStyle="TextStyle.H6" Text="@Match.SquadraCasa" TextAlign="TextAlign.Center" />
+        </RadzenStack>
 
-<p>This is the DettagliPartitaDialog component.</p>
+        <RadzenStack AlignItems="AlignItems.Center">
+            <RadzenText TextStyle="TextStyle.H2" Class="rz-m-0" Style="font-weight: bold;">
+                @(Match.GolCasa?.ToString() ?? "-") : @(Match.GolTrasferta?.ToString() ?? "-")
+            </RadzenText>
+            <RadzenBadge Text="FINALE" BadgeStyle="BadgeStyle.Light" />
+        </RadzenStack>
+
+        <RadzenStack AlignItems="AlignItems.Center" Style="width: 150px;">
+            <RadzenImage Path="@($"/img/logo/{Match.SquadraTrasferta}.png")" Style="width: 80px; height: 80px;" />
+            <RadzenText TextStyle="TextStyle.H6" Text="@Match.SquadraTrasferta" TextAlign="TextAlign.Center" />
+        </RadzenStack>
+    </RadzenStack>
+
+    <hr style="border: none; border-top: 1px solid var(--rz-divider); margin: 0;" />
+
+    @* Sezione Marcatori *@
+    <RadzenRow>
+        <RadzenColumn Size="6">
+            <RadzenStack Gap="0.5rem">
+                @foreach (var m in Match.Marcatori.Where(m => m.SquadraId == Match.SquadraCasaId))
+                {
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                        <RadzenIcon Icon="sports_soccer" Size="IconSize.Small" />
+                        <RadzenText TextStyle="TextStyle.Body2">@m.Nome (@m.Minuto')</RadzenText>
+                    </RadzenStack>
+                }
+            </RadzenStack>
+        </RadzenColumn>
+        <RadzenColumn Size="6">
+            <RadzenStack Gap="0.5rem" AlignItems="AlignItems.End">
+                @foreach (var m in Match.Marcatori.Where(m => m.SquadraId == Match.SquadraTrasfertaId))
+                {
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                        <RadzenText TextStyle="TextStyle.Body2">(@m.Minuto') @m.Nome</RadzenText>
+                        <RadzenIcon Icon="sports_soccer" Size="IconSize.Small" />
+                    </RadzenStack>
+                }
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
 
 @code {
-    
+    [Parameter] public Partita Match { get; set; } = default!;
 }

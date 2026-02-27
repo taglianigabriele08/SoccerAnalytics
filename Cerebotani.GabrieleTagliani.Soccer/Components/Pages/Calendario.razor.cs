@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Components;
+using Cerebotani.GabrieleTagliani.Soccer.Components.Pages;
 
 namespace Cerebotani.GabrieleTagliani.Soccer
 {
@@ -15,6 +16,7 @@ namespace Cerebotani.GabrieleTagliani.Soccer
         {
             // Uso il DB direttamente: più semplice e niente errori HTTP
             Partite = await db.Partite
+                .Include(p => p.Marcatori)
                 .Where(p => p.CampionatoId == CampionatoId)
                 .OrderBy(p => p.Giornata)
                 .ToListAsync();
