@@ -1,0 +1,42 @@
+@page "/classifica/{CampionatoId:int}"
+@using Cerebotani.GabrieleTagliani.Soccer.Models
+@using Microsoft.EntityFrameworkCore
+@inject ApplicationDbContext db
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Class="rz-mb-4">
+    <RadzenButton Icon="arrow_back" Click="@GoBack" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" />
+    <RadzenText TextStyle="TextStyle.H4" Text="@($"Classifica: {nomeCampionato}")" Class="rz-m-0" />
+</RadzenStack>
+
+<RadzenDataGrid Data="@classifica" TItem="SquadraCampionato" AllowSorting="true" 
+                GridLines="DataGridGridLines.Horizontal" Variant="Variant.Flat">
+    <Columns>
+        <RadzenDataGridColumn TItem="SquadraCampionato" Title="#" Width="50px" TextAlign="TextAlign.Center">
+            <Template Context="item">
+                <RadzenText TextStyle="TextStyle.Subtitle2" Class="rz-m-0">
+                    @(classifica.IndexOf(item) + 1)
+                </RadzenText>
+            </Template>
+        </RadzenDataGridColumn>
+        
+        <RadzenDataGridColumn TItem="SquadraCampionato" Title="Squadra" Width="250px">
+            <Template Context="item">
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                    <RadzenImage Path="@item.Squadra?.LogoUrl" Style="width: 40px; height: 40px; border-radius: 4px;" 
+                                 AlternateText="Logo" />
+                    <RadzenText TextStyle="TextStyle.Body1"><b>@item.Squadra?.Nome</b></RadzenText>
+                </RadzenStack>
+            </Template>
+        </RadzenDataGridColumn>
+    
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="PartiteGiocate" Title="PG" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="Vittorie" Title="V" Width="70px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="Pareggi" Title="P" Width="70px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="Sconfitte" Title="S" Width="70px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="GolFatti" Title="GF" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="GolSubiti" Title="GS" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="DifferenzaReti" Title="DR" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn TItem="SquadraCampionato" Property="Punti" Title="PT" Width="80px" TextAlign="TextAlign.Center" />
+
+    </Columns>
+</RadzenDataGrid>

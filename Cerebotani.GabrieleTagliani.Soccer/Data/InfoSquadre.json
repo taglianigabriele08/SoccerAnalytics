@@ -1,0 +1,794 @@
+[
+  {
+    "squadra": "Atalanta",
+    "anno_fondazione": 1907,
+    "citta": "Bergamo",
+    "stadio": "Gewiss Stadium"
+  },
+  {
+    "squadra": "Bologna",
+    "anno_fondazione": 1909,
+    "citta": "Bologna",
+    "stadio": "Renato Dall'Ara"
+  },
+  {
+    "squadra": "Cagliari",
+    "anno_fondazione": 1920,
+    "citta": "Cagliari",
+    "stadio": "Unipol Domus"
+  },
+  {
+    "squadra": "Como",
+    "anno_fondazione": 1907,
+    "citta": "Como",
+    "stadio": "Giuseppe Sinigaglia"
+  },
+  {
+    "squadra": "Cremonese",
+    "anno_fondazione": 1903,
+    "citta": "Cremona",
+    "stadio": "Giovanni Zini"
+  },
+  {
+    "squadra": "Fiorentina",
+    "anno_fondazione": 1926,
+    "citta": "Firenze",
+    "stadio": "Artemio Franchi"
+  },
+  {
+    "squadra": "Genoa",
+    "anno_fondazione": 1893,
+    "citta": "Genova",
+    "stadio": "Luigi Ferraris"
+  },
+  {
+    "squadra": "Inter",
+    "anno_fondazione": 1908,
+    "citta": "Milano",
+    "stadio": "Giuseppe Meazza"
+  },
+  {
+    "squadra": "Juventus",
+    "anno_fondazione": 1897,
+    "citta": "Torino",
+    "stadio": "Allianz Stadium"
+  },
+  {
+    "squadra": "Lazio",
+    "anno_fondazione": 1900,
+    "citta": "Roma",
+    "stadio": "Olimpico"
+  },
+  {
+    "squadra": "Lecce",
+    "anno_fondazione": 1908,
+    "citta": "Lecce",
+    "stadio": "Via del Mare"
+  },
+  {
+    "squadra": "Milan",
+    "anno_fondazione": 1899,
+    "citta": "Milano",
+    "stadio": "Giuseppe Meazza"
+  },
+  {
+    "squadra": "Napoli",
+    "anno_fondazione": 1926,
+    "citta": "Napoli",
+    "stadio": "Diego Armando Maradona"
+  },
+  {
+    "squadra": "Parma",
+    "anno_fondazione": 1913,
+    "citta": "Parma",
+    "stadio": "Ennio Tardini"
+  },
+  {
+    "squadra": "Pisa",
+    "anno_fondazione": 1909,
+    "citta": "Pisa",
+    "stadio": "Arena Garibaldi"
+  },
+  {
+    "squadra": "Roma",
+    "anno_fondazione": 1927,
+    "citta": "Roma",
+    "stadio": "Olimpico"
+  },
+  {
+    "squadra": "Sassuolo",
+    "anno_fondazione": 1920,
+    "citta": "Sassuolo",
+    "stadio": "Mapei Stadium"
+  },
+  {
+    "squadra": "Torino",
+    "anno_fondazione": 1906,
+    "citta": "Torino",
+    "stadio": "Olimpico Grande Torino"
+  },
+  {
+    "squadra": "Udinese",
+    "anno_fondazione": 1896,
+    "citta": "Udine",
+    "stadio": "Bluenergy Stadium"
+  },
+  {
+    "squadra": "Verona",
+    "anno_fondazione": 1903,
+    "citta": "Verona",
+    "stadio": "Marcantonio Bentegodi"
+  },
+
+
+  {
+    "squadra": "Arsenal",
+    "anno_fondazione": 1886,
+    "citta": "Londra",
+    "stadio": "Emirates Stadium"
+  },
+  {
+    "squadra": "Aston Villa",
+    "anno_fondazione": 1874,
+    "citta": "Birmingham",
+    "stadio": "Villa Park"
+  },
+  {
+    "squadra": "AFC Bournemouth",
+    "anno_fondazione": 1899,
+    "citta": "Bournemouth",
+    "stadio": "Vitality Stadium"
+  },
+  {
+    "squadra": "Brentford",
+    "anno_fondazione": 1889,
+    "citta": "Londra",
+    "stadio": "Gtech Community Stadium"
+  },
+  {
+    "squadra": "Brighton & Hove Albion",
+    "anno_fondazione": 1901,
+    "citta": "Brighton",
+    "stadio": "Amex Stadium"
+  },
+  {
+    "squadra": "Burnley",
+    "anno_fondazione": 1882,
+    "citta": "Burnley",
+    "stadio": "Turf Moor"
+  },
+  {
+    "squadra": "Chelsea",
+    "anno_fondazione": 1905,
+    "citta": "Londra",
+    "stadio": "Stamford Bridge"
+  },
+  {
+    "squadra": "Crystal Palace",
+    "anno_fondazione": 1905,
+    "citta": "Londra",
+    "stadio": "Selhurst Park"
+  },
+  {
+    "squadra": "Everton",
+    "anno_fondazione": 1878,
+    "citta": "Liverpool",
+    "stadio": "Everton Stadium"
+  },
+  {
+    "squadra": "Fulham",
+    "anno_fondazione": 1879,
+    "citta": "Londra",
+    "stadio": "Craven Cottage"
+  },
+  {
+    "squadra": "Leeds",
+    "anno_fondazione": 1919,
+    "citta": "Leeds",
+    "stadio": "Elland Road"
+  },
+  {
+    "squadra": "Liverpool",
+    "anno_fondazione": 1892,
+    "citta": "Liverpool",
+    "stadio": "Anfield"
+  },
+  {
+    "squadra": "Manchester City",
+    "anno_fondazione": 1880,
+    "citta": "Manchester",
+    "stadio": "Etihad Stadium"
+  },
+  {
+    "squadra": "Manchester United",
+    "anno_fondazione": 1878,
+    "citta": "Manchester",
+    "stadio": "Old Trafford"
+  },
+  {
+    "squadra": "Newcastle",
+    "anno_fondazione": 1892,
+    "citta": "Newcastle upon Tyne",
+    "stadio": "St James' Park"
+  },
+  {
+    "squadra": "Nottingham Forest",
+    "anno_fondazione": 1865,
+    "citta": "Nottingham",
+    "stadio": "City Ground"
+  },
+  {
+    "squadra": "Sunderland",
+    "anno_fondazione": 1879,
+    "citta": "Sunderland",
+    "stadio": "Stadium of Light"
+  },
+  {
+    "squadra": "Tottenham",
+    "anno_fondazione": 1882,
+    "citta": "Londra",
+    "stadio": "Tottenham Hotspur Stadium"
+  },
+  {
+    "squadra": "West Ham",
+    "anno_fondazione": 1895,
+    "citta": "Londra",
+    "stadio": "London Stadium"
+  },
+  {
+    "squadra": "Wolverhampton",
+    "anno_fondazione": 1877,
+    "citta": "Wolverhampton",
+    "stadio": "Molineux Stadium"
+  },
+
+
+  {
+    "squadra": "Alavés",
+    "anno_fondazione": 1921,
+    "citta": "Vitoria-Gasteiz",
+    "stadio": "Mendizorrotza"
+  },
+  {
+    "squadra": "Athletic Bilbao",
+    "anno_fondazione": 1898,
+    "citta": "Bilbao",
+    "stadio": "San Mamés"
+  },
+  {
+    "squadra": "Atlético Madrid",
+    "anno_fondazione": 1903,
+    "citta": "Madrid",
+    "stadio": "Cívitas Metropolitano"
+  },
+  {
+    "squadra": "Barcellona",
+    "anno_fondazione": 1899,
+    "citta": "Barcellona",
+    "stadio": "Spotify Camp Nou"
+  },
+  {
+    "squadra": "Celta Vigo",
+    "anno_fondazione": 1923,
+    "citta": "Vigo",
+    "stadio": "Abanca-Balaídos"
+  },
+  {
+    "squadra": "Elche",
+    "anno_fondazione": 1923,
+    "citta": "Elche",
+    "stadio": "Manuel Martínez Valero"
+  },
+  {
+    "squadra": "Espanyol",
+    "anno_fondazione": 1900,
+    "citta": "Barcellona",
+    "stadio": "RCDE Stadium"
+  },
+  {
+    "squadra": "Getafe",
+    "anno_fondazione": 1983,
+    "citta": "Getafe",
+    "stadio": "Coliseum"
+  },
+  {
+    "squadra": "Girona",
+    "anno_fondazione": 1930,
+    "citta": "Girona",
+    "stadio": "Montilivi"
+  },
+  {
+    "squadra": "Levante",
+    "anno_fondazione": 1909,
+    "citta": "Valencia",
+    "stadio": "Ciutat de València"
+  },
+  {
+    "squadra": "Mallorca",
+    "anno_fondazione": 1916,
+    "citta": "Palma di Maiorca",
+    "stadio": "Son Moix"
+  },
+  {
+    "squadra": "Osasuna",
+    "anno_fondazione": 1920,
+    "citta": "Pamplona",
+    "stadio": "El Sadar"
+  },
+  {
+    "squadra": "Rayo Vallecano",
+    "anno_fondazione": 1924,
+    "citta": "Madrid",
+    "stadio": "Vallecas"
+  },
+  {
+    "squadra": "Betis",
+    "anno_fondazione": 1907,
+    "citta": "Siviglia",
+    "stadio": "Benito Villamarín"
+  },
+  {
+    "squadra": "Real Madrid",
+    "anno_fondazione": 1902,
+    "citta": "Madrid",
+    "stadio": "Santiago Bernabéu"
+  },
+  {
+    "squadra": "Real Oviedo",
+    "anno_fondazione": 1926,
+    "citta": "Oviedo",
+    "stadio": "Carlos Tartiere"
+  },
+  {
+    "squadra": "Real Sociedad",
+    "anno_fondazione": 1909,
+    "citta": "San Sebastián",
+    "stadio": "Reale Arena"
+  },
+  {
+    "squadra": "Siviglia",
+    "anno_fondazione": 1890,
+    "citta": "Siviglia",
+    "stadio": "Ramón Sánchez-Pizjuán"
+  },
+  {
+    "squadra": "Valencia",
+    "anno_fondazione": 1919,
+    "citta": "Valencia",
+    "stadio": "Mestalla"
+  },
+  {
+    "squadra": "Villarreal",
+    "anno_fondazione": 1923,
+    "citta": "Villarreal",
+    "stadio": "Estadio de la Cerámica"
+  },
+
+
+  {
+    "squadra": "Bayern Monaco",
+    "anno_fondazione": 1900,
+    "citta": "Monaco di Baviera",
+    "stadio": "Allianz Arena"
+  },
+  {
+    "squadra": "Borussia Dortmund",
+    "anno_fondazione": 1909,
+    "citta": "Dortmund",
+    "stadio": "Signal Iduna Park"
+  },
+  {
+    "squadra": "Hoffenheim",
+    "anno_fondazione": 1899,
+    "citta": "Sinsheim",
+    "stadio": "PreZero Arena"
+  },
+  {
+    "squadra": "Stoccarda",
+    "anno_fondazione": 1893,
+    "citta": "Stoccarda",
+    "stadio": "MHPArena"
+  },
+  {
+    "squadra": "RB Lipsia",
+    "anno_fondazione": 2009,
+    "citta": "Lipsia",
+    "stadio": "Red Bull Arena"
+  },
+  {
+    "squadra": "Bayer Leverkusen",
+    "anno_fondazione": 1904,
+    "citta": "Leverkusen",
+    "stadio": "BayArena"
+  },
+  {
+    "squadra": "Eintracht Francoforte",
+    "anno_fondazione": 1899,
+    "citta": "Francoforte sul Meno",
+    "stadio": "Deutsche Bank Park"
+  },
+  {
+    "squadra": "Friburgo",
+    "anno_fondazione": 1904,
+    "citta": "Friburgo in Brisgovia",
+    "stadio": "Europa-Park Stadion"
+  },
+  {
+    "squadra": "Amburgo",
+    "anno_fondazione": 1887,
+    "citta": "Amburgo",
+    "stadio": "Volksparkstadion"
+  },
+  {
+    "squadra": "Union Berlino",
+    "anno_fondazione": 1966,
+    "citta": "Berlino",
+    "stadio": "Stadion An der Alten Försterei"
+  },
+  {
+    "squadra": "Augsburg",
+    "anno_fondazione": 1907,
+    "citta": "Augusta",
+    "stadio": "WWK Arena"
+  },
+  {
+    "squadra": "Colonia",
+    "anno_fondazione": 1948,
+    "citta": "Colonia",
+    "stadio": "RheinEnergieStadion"
+  },
+  {
+    "squadra": "Borussia M'Gladbach",
+    "anno_fondazione": 1900,
+    "citta": "Mönchengladbach",
+    "stadio": "Stadion im Borussia-Park"
+  },
+  {
+    "squadra": "Mainz",
+    "anno_fondazione": 1905,
+    "citta": "Magonza",
+    "stadio": "Mewa Arena"
+  },
+  {
+    "squadra": "Wolfsburg",
+    "anno_fondazione": 1945,
+    "citta": "Wolfsburg",
+    "stadio": "Volkswagen Arena"
+  },
+  {
+    "squadra": "Werder Brema",
+    "anno_fondazione": 1899,
+    "citta": "Brema",
+    "stadio": "Weserstadion"
+  },
+  {
+    "squadra": "FC St. Pauli",
+    "anno_fondazione": 1910,
+    "citta": "Amburgo",
+    "stadio": "Millerntor-Stadion"
+  },
+  {
+    "squadra": "Heidenheim",
+    "anno_fondazione": 1846,
+    "citta": "Heidenheim an der Brenz",
+    "stadio": "Voith-Arena"
+  },
+
+  
+  {
+    "squadra": "Angers",
+    "anno_fondazione": 1919,
+    "citta": "Angers",
+    "stadio": "Stade Raymond Kopa"
+  },
+  {
+    "squadra": "Auxerre",
+    "anno_fondazione": 1905,
+    "citta": "Auxerre",
+    "stadio": "Stade de l'Abbé-Deschamps"
+  },
+  {
+    "squadra": "Brest",
+    "anno_fondazione": 1950,
+    "citta": "Brest",
+    "stadio": "Stade Francis-Le Blé"
+  },
+  {
+    "squadra": "Le Havre",
+    "anno_fondazione": 1872,
+    "citta": "Le Havre",
+    "stadio": "Stade Océane"
+  },
+  {
+    "squadra": "Lens",
+    "anno_fondazione": 1906,
+    "citta": "Lens",
+    "stadio": "Stade Bollaert-Delelis"
+  },
+  {
+    "squadra": "Lilla",
+    "anno_fondazione": 1944,
+    "citta": "Lilla",
+    "stadio": "Stade Pierre-Mauroy"
+  },
+  {
+    "squadra": "Lorient",
+    "anno_fondazione": 1926,
+    "citta": "Lorient",
+    "stadio": "Stade du Moustoir"
+  },
+  {
+    "squadra": "Metz",
+    "anno_fondazione": 1932,
+    "citta": "Metz",
+    "stadio": "Stade Saint-Symphorien"
+  },
+  {
+    "squadra": "Monaco",
+    "anno_fondazione": 1924,
+    "citta": "Monaco",
+    "stadio": "Stade Louis II"
+  },
+  {
+    "squadra": "Nantes",
+    "anno_fondazione": 1943,
+    "citta": "Nantes",
+    "stadio": "Stade de la Beaujoire"
+  },
+  {
+    "squadra": "Nizza",
+    "anno_fondazione": 1904,
+    "citta": "Nizza",
+    "stadio": "Allianz Riviera"
+  },
+  {
+    "squadra": "Lione",
+    "anno_fondazione": 1950,
+    "citta": "Lione",
+    "stadio": "Groupama Stadium"
+  },
+  {
+    "squadra": "Olympique Marsiglia",
+    "anno_fondazione": 1899,
+    "citta": "Marsiglia",
+    "stadio": "Stade Vélodrome"
+  },
+  {
+    "squadra": "Paris FC",
+    "anno_fondazione": 1969,
+    "citta": "Parigi",
+    "stadio": "Stade Jean-Bouin"
+  },
+  {
+    "squadra": "PSG",
+    "anno_fondazione": 1970,
+    "citta": "Parigi",
+    "stadio": "Parc des Princes"
+  },
+  {
+    "squadra": "Rennes",
+    "anno_fondazione": 1901,
+    "citta": "Rennes",
+    "stadio": "Roazhon Park"
+  },
+  {
+    "squadra": "Racing Strasburgo",
+    "anno_fondazione": 1906,
+    "citta": "Strasburgo",
+    "stadio": "Stade de la Meinau"
+  },
+  {
+    "squadra": "Tolosa",
+    "anno_fondazione": 1970,
+    "citta": "Tolosa",
+    "stadio": "Stadium de Toulouse"
+  },
+
+  
+  {
+    "squadra": "Porto",
+    "anno_fondazione": 1893,
+    "citta": "Porto",
+    "stadio": "Estádio do Dragão"
+  },
+  {
+    "squadra": "Sporting Lisbona",
+    "anno_fondazione": 1906,
+    "citta": "Lisbona",
+    "stadio": "Estádio José Alvalade"
+  },
+  {
+    "squadra": "Benfica",
+    "anno_fondazione": 1904,
+    "citta": "Lisbona",
+    "stadio": "Estádio da Luz"
+  },
+  {
+    "squadra": "Braga",
+    "anno_fondazione": 1921,
+    "citta": "Braga",
+    "stadio": "Estádio Municipal de Braga"
+  },
+  {
+    "squadra": "Gil Vicente",
+    "anno_fondazione": 1924,
+    "citta": "Barcelos",
+    "stadio": "Estádio Cidade de Barcelos"
+  },
+  {
+    "squadra": "Famalicão",
+    "anno_fondazione": 1931,
+    "citta": "Vila Nova de Famalicão",
+    "stadio": "Estádio Municipal 22 de Junho"
+  },
+  {
+    "squadra": "Estoril Praia",
+    "anno_fondazione": 1939,
+    "citta": "Estoril",
+    "stadio": "Estádio António Coimbra da Mota"
+  },
+  {
+    "squadra": "Moreirense",
+    "anno_fondazione": 1938,
+    "citta": "Moreira de Cónegos",
+    "stadio": "Estádio Comendador Joaquim de Almeida Freitas"
+  },
+  {
+    "squadra": "Guimarães",
+    "anno_fondazione": 1922,
+    "citta": "Guimarães",
+    "stadio": "Estádio D. Afonso Henriques"
+  },
+  {
+    "squadra": "Arouca",
+    "anno_fondazione": 1951,
+    "citta": "Arouca",
+    "stadio": "Estádio Municipal de Arouca"
+  },
+  {
+    "squadra": "Futebol Clube de Alverca",
+    "anno_fondazione": 1939,
+    "citta": "Alverca do Ribatejo",
+    "stadio": "Estádio del FC Alverca"
+  },
+  {
+    "squadra": "Estrela Amadora",
+    "anno_fondazione": 2020,
+    "citta": "Amadora",
+    "stadio": "Estádio José Gomes"
+  },
+  {
+    "squadra": "Casa Pia",
+    "anno_fondazione": 1920,
+    "citta": "Lisbona",
+    "stadio": "Estádio Pina Manique"
+  },
+  {
+    "squadra": "CD Nacional",
+    "anno_fondazione": 1910,
+    "citta": "Funchal",
+    "stadio": "Estádio da Madeira"
+  },
+  {
+    "squadra": "Rio Ave",
+    "anno_fondazione": 1939,
+    "citta": "Vila do Conde",
+    "stadio": "Estádio dos Arcos"
+  },
+  {
+    "squadra": "Tondela",
+    "anno_fondazione": 1933,
+    "citta": "Tondela",
+    "stadio": "Estádio João Cardoso"
+  },
+  {
+    "squadra": "Santa Clara",
+    "anno_fondazione": 1927,
+    "citta": "Ponta Delgada",
+    "stadio": "Estádio de São Miguel"
+  },
+  {
+    "squadra": "AVS",
+    "anno_fondazione": 2023,
+    "citta": "Vila das Aves",
+    "stadio": "Estádio do CD das Aves"
+  },
+
+
+  {
+    "squadra": "Empoli",
+    "anno_fondazione": 1920,
+    "citta": "Empoli",
+    "stadio": "Stadio Carlo Castellani"
+  },
+  {
+    "squadra": "Venezia",
+    "anno_fondazione": 1907,
+    "citta": "Venezia",
+    "stadio": "Stadio Pier Luigi Penzo"
+  },
+  {
+    "squadra": "Monza",
+    "anno_fondazione": 1912,
+    "citta": "Monza",
+    "stadio": "U-Power Stadium"
+  },
+  {
+    "squadra": "Frosinone",
+    "anno_fondazione": 1906,
+    "citta": "Frosinone",
+    "stadio": "Stadio Benito Stirpe"
+  },
+  {
+    "squadra": "Salernitana",
+    "anno_fondazione": 1919,
+    "citta": "Salerno",
+    "stadio": "Stadio Arechi"
+  },
+  {
+    "squadra": "Spezia",
+    "anno_fondazione": 1906,
+    "citta": "La Spezia",
+    "stadio": "Stadio Alberto Picco"
+  },
+  {
+    "squadra": "Sampdoria",
+    "anno_fondazione": 1946,
+    "citta": "Genova",
+    "stadio": "Stadio Luigi Ferraris"
+  },
+  {
+    "squadra": "Leicester City",
+    "anno_fondazione": 1884,
+    "citta": "Leicester",
+    "stadio": "King Power Stadium"
+  },
+  {
+    "squadra": "Ipswich Town",
+    "anno_fondazione": 1878,
+    "citta": "Ipswich",
+    "stadio": "Portman Road"
+  },
+  {
+    "squadra": "Southampton",
+    "anno_fondazione": 1885,
+    "citta": "Southampton",
+    "stadio": "St Mary's Stadium"
+  },
+  {
+    "squadra": "Luton Town",
+    "anno_fondazione": 1885,
+    "citta": "Luton",
+    "stadio": "Kenilworth Road"
+  },
+  {
+    "squadra": "Sheffield United",
+    "anno_fondazione": 1889,
+    "citta": "Sheffield",
+    "stadio": "Bramall Lane"
+  },
+  {
+    "squadra": "Watford",
+    "anno_fondazione": 1881,
+    "citta": "Watford",
+    "stadio": "Vicarage Road"
+  },
+  {
+    "squadra": "Norwich City",
+    "anno_fondazione": 1902,
+    "citta": "Norwich",
+    "stadio": "Carrow Road"
+  },
+  {
+    "squadra": "Crotone",
+    "anno_fondazione": 1910,
+    "citta": "Crotone",
+    "stadio": "Ezio Scida"
+  },
+  {
+    "squadra": "Benevento",
+    "anno_fondazione": 1929,
+    "citta": "Benevento",
+    "stadio": "Ciro Vigorito"
+  }
+]

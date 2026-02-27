@@ -1,0 +1,51 @@
+<RadzenTemplateForm TItem="Campionato" Data="@interfaccia" Submit="@OnSubmit">
+    <RadzenStack Gap="1.5rem" class="rz-p-4">
+        <RadzenFormField Text="Descrizione" Style="width: 100%">
+            <RadzenTextBox @bind-Value="interfaccia.Descrizione" Name="Descrizione" Style="width: 100%" />
+        </RadzenFormField>
+        
+        <RadzenRow>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Nazione" Style="width: 100%">
+                    <RadzenTextBox @bind-Value="interfaccia.Nazione" Name="Nazione" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Categoria" Style="width: 100%">
+                    <RadzenTextBox @bind-Value="interfaccia.Categoria" Name="Categoria" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+        </RadzenRow>
+
+        <RadzenFormField Text="Stagione" Style="width: 100%">
+            <RadzenDropDown TValue="int" Data="@listaStagioni" 
+                            TextProperty="Descrizione" ValueProperty="Id" 
+                            @bind-Value="interfaccia.StagioneId" Style="width: 100%" />
+        </RadzenFormField>
+
+        <RadzenRow>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Inizio" Style="width: 100%">
+                    <RadzenDatePicker @bind-Value="interfaccia.Inizio" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Fine" Style="width: 100%">
+                    <RadzenDatePicker @bind-Value="interfaccia.Fine" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+        </RadzenRow>
+
+        <RadzenText TextStyle="TextStyle.Subtitle2" Text="Squadre Partecipanti" Class="rz-mt-4" />
+        <RadzenListBox @bind-Value="@idsSquadreSelezionate" Data="@squadre"
+                        TextProperty="Nome" ValueProperty="Id"
+                        Multiple="true" AllowFiltering="true"
+                        Placeholder="Seleziona le squadre"
+                        Style="width: 100%; height: 200px" />
+
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonType="ButtonType.Submit" Text="Conferma" Icon="check" ButtonStyle="ButtonStyle.Primary" />
+            <RadzenButton Click="@Cancel" Text="Annulla" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" />
+        </RadzenStack>
+    </RadzenStack>
+</RadzenTemplateForm>

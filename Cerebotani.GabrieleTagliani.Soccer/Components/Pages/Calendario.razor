@@ -1,0 +1,73 @@
+@page "/calendario/{CampionatoId:int}"
+
+@inherits CalendarioBase
+
+<RadzenStack Class="rz-p-4">
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center"
+                 JustifyContent="JustifyContent.SpaceBetween">
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+            <RadzenIcon Icon="event" IconColor="@Colors.Primary" />
+            <RadzenText TextStyle="TextStyle.H4" Text="Risultati e Calendario" Class="rz-m-0" />
+        </RadzenStack>
+        <RadzenButton Text="Torna ai Campionati" Icon="arrow_back" ButtonStyle="ButtonStyle.Light"
+                      Click="@TornaIndietro" />
+    </RadzenStack>
+
+    @if (Partite == null)
+    {
+        <RadzenProgressBar Value="100" ShowValue="false" Mode="ProgressBarMode.Indeterminate" Class="rz-mt-4" />
+    }
+    else if (!Partite.Any())
+    {
+        <RadzenAlert Title="Nessun dato" AlertStyle="AlertStyle.Info" Variant="Variant.Flat" Class="rz-mt-4">
+            Non ci sono partite registrate per questo campionato.
+        </RadzenAlert>
+    }
+    else
+    {
+        @foreach (var giornata in Partite.GroupBy(p => p.Giornata).OrderBy(g => g.Key))
+        {
+            <RadzenText TextStyle="TextStyle.H6" Text="@($"Giornata {giornata.Key}")" Class="rz-mt-6 rz-mb-2" />
+
+            <RadzenDataGrid Data="@giornata" TItem="Partita" AllowPaging="false" Density="Density.Compact" Style="width: 100%;">
+                <Columns>
+                    <RadzenDataGridColumn TItem="Partita" Property="Data" Title="Data" Width="100px">
+                        <Template Context="p">
+                            <span style="font-size: 0.85rem; color: #666;">
+                                @p.Data.ToString("dd/MM")
+                            </span>
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Partita" Title="Casa" TextAlign="TextAlign.Right">
+                        <Template Context="p">
+                            <span style="font-weight: bold; font-size: 0.95rem;">@p.SquadraCasa</span>
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Partita" Title="Risultato" Width="100px" TextAlign="TextAlign.Center">
+                        <Template Context="p">
+                            @if (p.GolCasa.HasValue && p.GolTrasferta.HasValue)
+                            {
+                                <RadzenBadge BadgeStyle="BadgeStyle.Primary" IsPill="true"
+                                             Style="min-width: 45px; font-size: 0.9rem; font-weight: bold;">
+                                    @p.GolCasa - @p.GolTrasferta
+                                </RadzenBadge>
+                            }
+                            else
+                            {
+                                <span style="color: var(--rz-text-disabled-color); font-weight: bold;"> - </span>
+                            }
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Partita" Title="Trasferta" TextAlign="TextAlign.Left">
+                        <Template Context="p">
+                            <span style="font-weight: bold; font-size: 0.95rem;">@p.SquadraTrasferta</span>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+        }
+    }
+</RadzenStack>

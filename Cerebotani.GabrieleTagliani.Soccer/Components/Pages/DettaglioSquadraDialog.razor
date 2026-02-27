@@ -1,0 +1,54 @@
+@using Radzen
+@using Radzen.Blazor
+@using Cerebotani.GabrieleTagliani.Soccer.Models
+
+<RadzenTemplateForm TItem="Squadra" Data="@interfaccia" Submit="@OnSubmit">
+    <RadzenStack Gap="1.5rem" class="rz-p-4">
+        
+        <RadzenRow AlignItems="AlignItems.Center">
+            <RadzenColumn Size="12" SizeMD="4">
+                <RadzenStack AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center" Style="border: 2px dashed #ccc; border-radius: 10px; padding: 10px; height: 120px;">
+                    @if (!string.IsNullOrEmpty(interfaccia.LogoUrl))
+                    {
+                        <RadzenImage Path="@interfaccia.LogoUrl" Style="width: 100px; height: 100px; object-fit: contain;" />
+                    }
+                    else
+                    {
+                        <RadzenIcon Icon="image" Style="font-size: 3rem; color: #ccc;" />
+                        <RadzenText TextStyle="TextStyle.Caption" Text="No Logo" />
+                    }
+                </RadzenStack>
+            </RadzenColumn>
+            
+            <RadzenColumn Size="12" SizeMD="8">
+                <RadzenFormField Text="Nome Squadra" Style="width: 100%">
+                    <RadzenTextBox @bind-Value="interfaccia.Nome" Name="Nome" Style="width: 100%" />
+                    <RadzenRequiredValidator Component="Nome" Text="Il nome è obbligatorio" />
+                </RadzenFormField>
+
+                <RadzenFormField Text="URL Logo" Style="width: 100%" Class="rz-mt-2">
+                    <RadzenTextBox @bind-Value="interfaccia.LogoUrl" Name="LogoUrl" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+        </RadzenRow>
+
+        <RadzenRow>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Città" Style="width: 100%">
+                    <RadzenTextBox @bind-Value="interfaccia.Citta" Name="Citta" Style="width: 100%" />
+                    <RadzenRequiredValidator Component="Citta" Text="Obbligatorio inserire la città" />
+                </RadzenFormField>
+            </RadzenColumn>
+            <RadzenColumn Size="6">
+                <RadzenFormField Text="Stadio" Style="width: 100%">
+                    <RadzenTextBox @bind-Value="interfaccia.Stadio" Name="Stadio" Style="width: 100%" />
+                </RadzenFormField>
+            </RadzenColumn>
+        </RadzenRow>
+
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonType="ButtonType.Submit" Text="Salva" Icon="save" ButtonStyle="ButtonStyle.Primary" />
+            <RadzenButton Click="@Cancel" Text="Annulla" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" /> 
+        </RadzenStack> 
+    </RadzenStack>
+</RadzenTemplateForm>

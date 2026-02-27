@@ -1,0 +1,79 @@
+@page "/campionati"
+@inject NavigationManager NavigationManager
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center"
+             JustifyContent="JustifyContent.SpaceBetween" Class="rz-mb-4">
+    <RadzenText TextStyle="TextStyle.H4" Text="Gestione Campionati" />
+    <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Nuovo Campionato" Click="@InsertRow" />
+</RadzenStack>
+
+<RadzenDataGrid @ref="Grid" AllowFiltering="true" AllowPaging="true" PageSize="10" AllowSorting="true"
+                AllowGrouping="true" Data="@Items" TItem="Campionato" RowSelect="@OpenDetails"
+                Render="@OnRender" GroupRowRender="OnGroupRowRender">
+   
+    <Template Context="campionato">
+        <RadzenCard Variant="Variant.Flat" Class="rz-background-color-primary-lighter rz-p-4">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Class="rz-mb-2">
+                <RadzenIcon Icon="groups" />
+                <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0">
+                    <b>Squadre partecipanti (@(campionato.SquadreCampionato?.Count ?? 0))</b>
+                </RadzenText>
+            </RadzenStack>
+
+            <RadzenDataGrid Data="@campionato.SquadreCampionato" TItem="SquadraCampionato" AllowPaging="false">
+                <Columns>
+                    <RadzenDataGridColumn TItem="SquadraCampionato" Property="Squadra.Nome" Title="Squadra" />
+                    <RadzenDataGridColumn TItem="SquadraCampionato" Property="Squadra.Anno" Title="Anno di Fondazione" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="SquadraCampionato" Property="Squadra.Citta" Title="Città" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="SquadraCampionato" Property="Squadra.Stadio" Title="Stadio" TextAlign="TextAlign.Center" />
+                </Columns>
+            </RadzenDataGrid>
+        </RadzenCard>
+    </Template>
+
+    <Columns>
+        <RadzenDataGridColumn TItem="Campionato" Property="Descrizione" Title="Descrizione" />
+        <RadzenDataGridColumn TItem="Campionato" Property="Nazione" Title="Paese" />
+        <RadzenDataGridColumn TItem="Campionato" Property="Categoria" Title="Divisione" />
+
+        <RadzenDataGridColumn TItem="Campionato" Title="Stagione" Property="Stagione.Descrizione">
+            <Template Context="campionato">
+                @campionato.Stagione?.Descrizione
+            </Template>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Campionato" Title="Periodo" Width="220px" Property="Inizio" TextAlign="TextAlign.Center">
+            <Template Context="campionato">
+                <div style="white-space: nowrap; font-variant-numeric: tabular-nums;">
+                    @campionato.Inizio.ToShortDateString() &ndash; @campionato.Fine.ToShortDateString()
+                </div>
+            </Template>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Campionato" Title="Importa JSON" Width="200px" Sortable="false" Filterable="false" TextAlign="TextAlign.Center">
+            <Template Context="campionatoContext">
+                <RadzenUpload @ref="UploadComponent" ChooseText="Upload" Icon="upload" Auto="true" Accept=".json"
+                      Change="@(args => OnUpload(args, campionatoContext))" @onclick:stopPropagation="true" />
+            </Template>
+        </RadzenDataGridColumn>
+
+        <RadzenDataGridColumn TItem="Campionato" Context="campionato" Filterable="false" Sortable="false"
+                            TextAlign="TextAlign.Right" Width="140px">
+            <Template Context="campionato">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                    <RadzenButton Icon="leaderboard" ButtonStyle="ButtonStyle.Info" Variant="Variant.Flat"
+                                Size="ButtonSize.Medium" Click="@(args => NavigaClassifica(campionato.Id))"
+                                ToolTip="Vedi Classifica" @onclick:stopPropagation="true" />
+
+                    <RadzenButton Icon="event" ButtonStyle="ButtonStyle.Secondary" Variant="Variant.Flat"
+                          Size="ButtonSize.Medium" Click="@(args => NavigaCalendario(campionato.Id))"
+                          ToolTip="Vedi Calendario e Risultati" @onclick:stopPropagation="true" />
+
+                    <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat"
+                                Size="ButtonSize.Medium" Click="@(args => ConfirmDelete(campionato))"
+                                ToolTip="Elimina" @onclick:stopPropagation="true" />
+                </RadzenStack>
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>

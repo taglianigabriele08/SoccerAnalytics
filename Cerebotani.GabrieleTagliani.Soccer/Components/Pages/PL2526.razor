@@ -1,0 +1,47 @@
+@page "/premier-league-2526"
+@using Cerebotani.GabrieleTagliani.Soccer.Models
+@namespace Cerebotani.GabrieleTagliani.Soccer.Components.Pages
+
+<PageTitle>Classifica Premier League</PageTitle>
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem" class="rz-p-6">
+    <RadzenImage Path="img/PremierLeagueLogo.png" Style="width: 50px; height: 50px;" />
+    <RadzenText TextStyle="TextStyle.H4" TagName="TagName.H1" class="rz-m-0">Classifica Premier League 2025/26</RadzenText>
+</RadzenStack>
+
+<RadzenCard class="rz-m-4 rz-shadow-3">
+    <RadzenDataGrid Data="@Dati" TItem="Dat1" AllowPaging="false" AllowSorting="true" 
+                    ExpandMode="DataGridExpandMode.Single" class="rz-border-radius-1">
+        <Columns>
+            <RadzenDataGridColumn TItem="Dat1" Property="Posizione" Title="#" Width="60px" TextAlign="TextAlign.Center">
+                <Template Context="item">
+                    <b style="color: var(--rz-primary);">@item.Posizione</b>
+                </Template>
+            </RadzenDataGridColumn>
+
+            <RadzenDataGridColumn TItem="Dat1" Property="Squadra" Title="Squadra" Width="250px">
+                <Template Context="item">
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="1rem">
+                        <RadzenImage Path="@item.LogoUrl" Style="width: 30px; height: 30px; object-fit: contain;" />
+                        <RadzenText TextStyle="TextStyle.Subtitle2" class="rz-m-0">@item.Squadra</RadzenText>
+                    </RadzenStack>
+                </Template>
+            </RadzenDataGridColumn>
+
+            <RadzenDataGridColumn TItem="Dat1" Property="PartiteGiocate" Title="PG" Width="80px" TextAlign="TextAlign.Center" />
+            <RadzenDataGridColumn TItem="Dat1" Property="Vittorie" Title="V" Width="60px" TextAlign="TextAlign.Center" />
+            <RadzenDataGridColumn TItem="Dat1" Property="Pareggi" Title="P" Width="60px" TextAlign="TextAlign.Center" />
+            <RadzenDataGridColumn TItem="Dat1" Property="Sconfitte" Title="S" Width="60px" TextAlign="TextAlign.Center" />
+            
+            <RadzenDataGridColumn TItem="Dat1" Property="GolFatti" Title="GF" Width="70px" TextAlign="TextAlign.Center" />
+            <RadzenDataGridColumn TItem="Dat1" Property="GolSubiti" Title="GS" Width="70px" TextAlign="TextAlign.Center" />
+            <RadzenDataGridColumn TItem="Dat1" Property="DifferenzaReti" Title="DR" Width="70px" TextAlign="TextAlign.Center" />
+
+            <RadzenDataGridColumn TItem="Dat1" Property="Punti" Title="PT" Width="100px" TextAlign="TextAlign.Center">
+                <Template Context="item">
+                    <RadzenBadge BadgeStyle="BadgeStyle.Primary" IsPill="false" Text="@item.Punti.ToString()" style="font-size: 1rem; width: 40px;" />
+                </Template>
+            </RadzenDataGridColumn>
+        </Columns>
+    </RadzenDataGrid>
+</RadzenCard>

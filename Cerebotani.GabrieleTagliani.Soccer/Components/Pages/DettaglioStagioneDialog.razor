@@ -1,0 +1,27 @@
+@page "/dettaglio-stagione-dialog"
+@using Radzen
+@using Radzen.Blazor
+@using Cerebotani.GabrieleTagliani.Soccer.Models
+
+<RadzenTemplateForm TItem="Stagione" Data="@Stagione" Submit="@OnSubmit">
+    <RadzenStack Gap="1.5rem">
+        <RadzenFieldset Text="Informazioni Stagione">
+            <RadzenStack Gap="1rem">
+                <RadzenRow AlignItems="AlignItems.Center">
+                    <RadzenColumn Size="12" SizeMD="4">
+                        <RadzenLabel Text="Descrizione" Component="Descrizione" />
+                    </RadzenColumn>
+                    <RadzenColumn Size="12" SizeMD="8">
+                        <RadzenTextBox style="display: block; width: 100%;" @bind-Value="@Stagione.Descrizione" Name="Descrizione" />
+                        <RadzenRequiredValidator Component="Descrizione" Text="La descrizione è obbligatoria" />
+                    </RadzenColumn>
+                </RadzenRow>
+            </RadzenStack>
+        </RadzenFieldset>
+        
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonType="ButtonType.Submit" Icon="save" Text="Salva" ButtonStyle="ButtonStyle.Primary" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Icon="cancel" Text="Annulla" Click="@OnCancel" />
+        </RadzenStack>
+    </RadzenStack>
+</RadzenTemplateForm>

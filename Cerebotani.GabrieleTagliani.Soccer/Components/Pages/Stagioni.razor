@@ -1,0 +1,32 @@
+@page "/stagioni"
+@using Microsoft.AspNetCore.Components.Forms
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" 
+             JustifyContent="JustifyContent.SpaceBetween" Class="rz-mb-4">
+    <RadzenText TextStyle="TextStyle.H4" Text="Gestione stagioni" />
+    <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="add_circle" Text="Nuova stagione" Click="@InsertRow" />
+</RadzenStack>
+
+<RadzenDataGrid @ref="Grid" AllowFiltering="true" AllowPaging="true" PageSize="10" AllowSorting="true"
+                Data="@Items" TItem="Stagione" RowSelect="@OpenDetails">
+    <Columns>
+        <RadzenDataGridColumn TItem="Stagione" Property="Id" Title="ID" />
+
+        <RadzenDataGridColumn TItem="Stagione" Property="Descrizione" Title="Descrizione" />
+
+        @* <RadzenDataGridColumn TItem="Stagione" Title="Importa JSON" Width="150px" Sortable="false" Filterable="false" TextAlign="TextAlign.Center">
+            <Template Context="stagione">
+                <RadzenUpload @ref="UploadComponent" ChooseText="Upload" Icon="upload" Auto="false" 
+                            Accept=".json" Change="@OnUpload" />
+            </Template>
+        </RadzenDataGridColumn> *@
+
+        <RadzenDataGridColumn TItem="Stagione" Context="stagione" Filterable="false" Sortable="false" TextAlign="TextAlign.Right" Width="100px">
+            <Template Context="stagione">
+                <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Variant="Variant.Flat" 
+                              Size="ButtonSize.Medium" Click="@(args => ConfirmDelete(stagione))" 
+                              @onclick:stopPropagation="true" />
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid>

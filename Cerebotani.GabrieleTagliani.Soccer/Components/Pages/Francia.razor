@@ -1,0 +1,109 @@
+@page "/campionati-francesi"
+@inject NavigationManager NavigationManager
+
+<RadzenText TextStyle="TextStyle.H4" TagName="TagName.H1" class="rz-p-4">Campionati Francesi</RadzenText>
+
+<RadzenRow class="rz-p-4">
+    @* --- Ligue 1 --- *@
+    <RadzenColumn Size="12" SizeMD="4">
+        <RadzenCard class="rz-my-4">
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" class="rz-p-4">
+                <RadzenImage Path="img/Ligue1Logo.png" Style="width: 80px; height: 80px;" />
+                <RadzenStack Gap="0">
+                    <RadzenText TextStyle="TextStyle.Overline" class="rz-display-flex rz-mt-2 rz-my-0">Lega Calcio</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H5"><b>Ligue1</b></RadzenText>
+                    <RadzenText TextStyle="TextStyle.Body2">Stagione 2025/2026</RadzenText>
+                </RadzenStack>
+            </RadzenStack>
+
+            <RadzenCard class="rz-background-color-primary-light rz-shadow-0 rz-border-radius-0 rz-p-4" style="margin: 1rem calc(-1 * var(--rz-card-padding));">
+                <RadzenRow>
+                    <RadzenColumn Size="6">
+                        <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Squadre</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>18</b></RadzenText>
+                    </RadzenColumn>
+                    <RadzenColumn Size="6">
+                        <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Girone</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>1</b></RadzenText>
+                    </RadzenColumn>
+                </RadzenRow>
+            </RadzenCard>
+
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="1rem">
+                <RadzenButton Variant="Variant.Text" Text="Calendario" Icon="calendar_month" />
+                <RadzenButton Variant="Variant.Filled" Text="Classifica" Icon="leaderboard" Click="@(() => GoToClassifica("ligue1-2526"))" />
+            </RadzenStack>
+        </RadzenCard>
+    </RadzenColumn>
+
+    @* --- Ligue 2 --- *@
+    <RadzenColumn Size="12" SizeMD="4">
+        <RadzenCard class="rz-my-4">
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" class="rz-p-4">
+                <RadzenImage Path="img/Ligue2Logo.png" Style="width: 80px; height: 80px;" />
+                <RadzenStack Gap="0">
+                    <RadzenText TextStyle="TextStyle.Overline" class="rz-display-flex rz-mt-2 rz-my-0">Lega Calcio</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H5"><b>Ligue2</b></RadzenText>
+                    <RadzenText TextStyle="TextStyle.Body2">Stagione 2025/2026</RadzenText>
+                </RadzenStack>
+            </RadzenStack>
+
+            <RadzenCard class="rz-background-color-primary-light rz-shadow-0 rz-border-radius-0 rz-p-4" style="margin: 1rem calc(-1 * var(--rz-card-padding));">
+                <RadzenRow>
+                    <RadzenColumn Size="6">
+                        <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Squadre</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>18</b></RadzenText>
+                    </RadzenColumn>
+                    <RadzenColumn Size="6">
+                        <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Girone</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>1</b></RadzenText>
+                    </RadzenColumn>
+                </RadzenRow>
+            </RadzenCard>
+
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="1rem">
+                <RadzenButton Variant="Variant.Text" Text="Calendario" Icon="calendar_month" />
+                <RadzenButton Variant="Variant.Filled" Text="Classifica" Icon="leaderboard" Click="@(() => GoToClassifica("ligue2-2526"))" />
+            </RadzenStack>
+        </RadzenCard>
+    </RadzenColumn>
+
+    @* --- Ligue 3 --- *@
+    <RadzenColumn Size="12" SizeMD="4">
+        <RadzenCard class="rz-my-4">
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" class="rz-p-4">
+                <RadzenImage Path="img/Ligue3Logo.png" Style="width: 80px; height: 80px;" />
+                <RadzenStack Gap="0">
+                    <RadzenText TextStyle="TextStyle.Overline" class="rz-display-flex rz-mt-2 rz-my-0">Lega Calcio</RadzenText>
+                    <RadzenText TextStyle="TextStyle.H5"><b>Ligue3</b></RadzenText>
+                    <RadzenText TextStyle="TextStyle.Body2">Stagione 2025/2026</RadzenText>
+                </RadzenStack>
+            </RadzenStack>
+
+            <RadzenCard class="rz-background-color-primary-light rz-shadow-0 rz-border-radius-0 rz-p-4" style="margin: 1rem calc(-1 * var(--rz-card-padding));">
+                <RadzenRow>
+                    <RadzenColumn Size="6">
+                        <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Squadre</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>18</b></RadzenText>
+                    </RadzenColumn>
+                    <RadzenColumn Size="6">
+                         <RadzenText TextStyle="TextStyle.Overline" class="rz-color-on-primary-light rz-mb-0">Girone</RadzenText>
+                         <RadzenText TextStyle="TextStyle.Body1" class="rz-color-on-primary-light"><b>1</b></RadzenText>
+                    </RadzenColumn>
+                </RadzenRow>
+            </RadzenCard>
+
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="1rem">
+                <RadzenButton Variant="Variant.Text" Text="Calendario" Icon="calendar_month" />
+                <RadzenButton Variant="Variant.Filled" Text="Classifica" Icon="leaderboard" Click="@(() => GoToClassifica("ligue3-2526"))" />
+            </RadzenStack>
+        </RadzenCard>
+    </RadzenColumn>
+</RadzenRow>
+
+@code {
+    void GoToClassifica(string campionato)
+    {
+        NavigationManager.NavigateTo($"/{campionato}");
+    }
+}
