@@ -167,20 +167,35 @@ public partial class Campionati(DialogService dialogService,
             var file = args.Files?.FirstOrDefault();
             if (file == null) return;
 
-            // 1. Leggi il file JSON (strutturato come lista di partite)
+            // 1. Leggi il file JSON
             using var stream = file.OpenReadStream(maxAllowedSize: 1024 * 1024 * 5);
             var partiteImportate = await JsonSerializer.DeserializeAsync<List<PartitaDTO>>(stream,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true, AllowTrailingCommas = true });
 
             if (partiteImportate == null || !partiteImportate.Any()) return;
 
-            // cancellazione delle partite precedenti
+            // --- INIZIO PULIZIA DATI ---
+            // 2. Recuperiamo le vecchie partite e i relativi marcatori
             var partiteVecchie = await db.Partite
+                .Include(p => p.Marcatori) 
                 .Where(p => p.CampionatoId == campionatoContext.Id)
                 .ToListAsync();
-            db.Partite.RemoveRange(partiteVecchie);
 
-            // reset dei dati
+            if (partiteVecchie.Any())
+            {
+                // Rimuoviamo i marcatori esplicitamente se necessario (a seconda della configurazione DB)
+                foreach (var pv in partiteVecchie)
+                {
+                    if (pv.Marcatori.Any())
+                        db.RemoveRange(pv.Marcatori);
+                }
+                db.Partite.RemoveRange(partiteVecchie);
+                
+                // Salviamo subito la pulizia per evitare conflitti di ID
+                await db.SaveChangesAsync();
+            }
+
+            // 3. Reset dei legami classifica (azzeriamo i punti prima di ricalcolarli)
             var legamiClassifica = await db.SquadreCampionati
                 .Where(sc => sc.CampionatoId == campionatoContext.Id)
                 .ToListAsync();
@@ -190,9 +205,16 @@ public partial class Campionati(DialogService dialogService,
                 l.Punti = 0; l.Vittorie = 0; l.Pareggi = 0; l.Sconfitte = 0;
                 l.GolFatti = 0; l.GolSubiti = 0; l.DifferenzaReti = 0; l.PartiteGiocate = 0;
             }
+            // --- FINE PULIZIA DATI ---
 
+            // 4. Ciclo di inserimento nuove partite
             foreach (var p in partiteImportate)
             {
+                // A. Aggiorna o crea squadre e legami classifica
+                await AggiornaStatisticheSquadra(campionatoContext.Id, p.SquadraCasa, p.GolCasa, p.GolTrasferta);
+                await AggiornaStatisticheSquadra(campionatoContext.Id, p.SquadraTrasferta, p.GolTrasferta, p.GolCasa);
+
+                // B. Crea l'oggetto Partita
                 var nuovaPartita = new Partita
                 {
                     CampionatoId = campionatoContext.Id,
@@ -202,25 +224,32 @@ public partial class Campionati(DialogService dialogService,
                     SquadraTrasferta = p.SquadraTrasferta,
                     GolCasa = p.GolCasa,
                     GolTrasferta = p.GolTrasferta,
-
-                    Marcatori = p.Marcatori?.Select(m => new Marcatore
-                    {
-                        Nome = m.Nome,
-                        Minuto = m.Minuto,
-                        Recupero = m.Recupero,
-                        Rigore = m.Rigore,
-                        SquadraNome = m.SquadraNome
-                    }).ToList() ?? new List<Marcatore>()
+                    Marcatori = new List<Marcatore>() // Inizializziamo la lista
                 };
-                db.Partite.Add(nuovaPartita);
 
-                // B. Aggiorna Classifica (Casa)
-                await AggiornaStatisticheSquadra(campionatoContext.Id, p.SquadraCasa, p.GolCasa, p.GolTrasferta);
-                // C. Aggiorna Classifica (Trasferta)
-                await AggiornaStatisticheSquadra(campionatoContext.Id, p.SquadraTrasferta, p.GolTrasferta, p.GolCasa);
+                // C. Aggiungi i marcatori se presenti
+                if (p.Marcatori != null)
+                {
+                    foreach (var m in p.Marcatori)
+                    {
+                        nuovaPartita.Marcatori.Add(new Marcatore
+                        {
+                            Nome = m.Nome,
+                            Minuto = m.Minuto,
+                            Recupero = m.Recupero,
+                            Rigore = m.Rigore,
+                            SquadraNome = m.SquadraNome
+                        });
+                    }
+                }
+
+                db.Partite.Add(nuovaPartita);
             }
 
+            // 5. Unico salvataggio finale per tutte le nuove partite e marcatori
             await db.SaveChangesAsync();
+
+            // Refresh UI
             UploadComponent?.ClearFiles();
             await RefreshDataAsync();
             if (Grid != null) await Grid.Reload();
@@ -229,7 +258,7 @@ public partial class Campionati(DialogService dialogService,
             {
                 Severity = NotificationSeverity.Success,
                 Summary = "Successo",
-                Detail = $"Calendario e Classifica aggiornati per {campionatoContext.Descrizione}"
+                Detail = $"Calendario e Classifica aggiornati (puliti e reinseriti) per {campionatoContext.Descrizione}"
             });
         }
         catch (Exception ex)
@@ -237,7 +266,7 @@ public partial class Campionati(DialogService dialogService,
             notificationService.Notify(new NotificationMessage
             {
                 Severity = NotificationSeverity.Error,
-                Summary = "Errore",
+                Summary = "Errore durante l'importazione",
                 Detail = ex.Message
             });
         }

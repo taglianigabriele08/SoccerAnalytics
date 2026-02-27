@@ -1,8 +1,14 @@
 @page "/calendario-visivo/{CampionatoId:int}"
 @inherits CalendarioVisivoBase
 
-<RadzenScheduler @ref="scheduler" style="height: 768px;" TItem="Partita" Data=@partite 
-    StartProperty="Data" EndProperty="Fine" TextProperty="TitoloCalendario"
+<div class="alert alert-info">
+    ID Campionato: @CampionatoId | 
+    Partite trovate: @partite.Count | 
+    Data prima partita: @(partite.FirstOrDefault()?.Data.ToString() ?? "Nessuna")
+</div>
+
+<RadzenScheduler @bind-Date="@DataSelezionata" @ref="scheduler" style="height: 768px;" TItem="Partita" Data=@partite 
+    StartProperty="Data" EndProperty="Fine" TextProperty="CalendarioMatches"
     SelectedIndex="2" 
     AppointmentMouseEnter="@(args => ShowTooltip(args.Element, args.Data))" 
     AppointmentMouseLeave=@OnAppointmentMouseLeave>

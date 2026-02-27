@@ -169,7 +169,7 @@
     "giornata": 2,
     "data": "2025-08-31",
     "squadraCasa": "Lazio",
-    "squadraTrasferta": "Hellas Verona",
+    "squadraTrasferta": "Verona",
     "golCasa": 4,
     "golTrasferta": 0,
     "marcatori": [
@@ -2287,7 +2287,74 @@
     ]
   },
 
-  
+  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Como", "squadraTrasferta": "Bologna", "golCasa": 1, "golTrasferta": 1, 
+    "marcatori": [
+      { "nome": "N. Cambiaghi", "minuto": 49, "rigore": false, "squadraNome": "Bologna" },
+      { "nome": "M. Baturina", "minuto": 90, "recupero": 5, "rigore": false, "squadraNome": "Como" }
+    ]
+  },
+  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Udinese", "squadraTrasferta": "Pisa", "golCasa": 2, "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "M. Tramoni", "minuto": 14, "rigore": false, "squadraNome": "Pisa" },
+      { "nome": "C. Kabasele", "minuto": 20, "rigore": false, "squadraNome": "Udinese" },
+      { "nome": "K. Davis", "minuto": 41, "rigore": true, "squadraNome": "Udinese" },
+      { "nome": "H. Meister", "minuto": 67, "rigore": false, "squadraNome": "Pisa" }
+    ] 
+  },
+  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Roma", "squadraTrasferta": "Sassuolo", "golCasa": 2, "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "M. Koné", "minuto": 77, "rigore": false, "squadraNome": "Roma" },
+      { "nome": "M. Soulé", "minuto": 79, "rigore": false, "squadraNome": "Roma" }
+    ]
+  },
+  { "giornata": 20, "data": "2026-01-10", "squadraCasa": "Atalanta", "squadraTrasferta": "Torino", "golCasa": 2, "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "C. De Ketelaere", "minuto": 14, "rigore": false, "squadraNome": "Atalanta" },
+      { "nome": "M. Pašalić", "minuto": 90, "recupero": 4, "rigore": false, "squadraNome": "Atalanta" }
+    ] 
+  },
+  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Lecce", "squadraTrasferta": "Parma", "golCasa": 1, "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "N. Stulic", "minuto": 1, "rigore": false, "squadraNome": "Lecce" },
+      { "nome": "C. Tiago Gabriel (AU)", "minuto": 64, "rigore": false, "squadraNome": "Parma" }, 
+      { "nome": "M. Pellegrino", "minuto": 73, "rigore": false, "squadraNome": "Parma" } 
+    ]
+  },
+  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Fiorentina", "squadraTrasferta": "Milan", "golCasa": 1, "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "P. Comuzzo", "minuto": 66, "rigore": false, "squadraNome": "Fiorentina" },
+      { "nome": "C. Nkunku", "minuto": 90, "recupero": 2, "rigore": false, "squadraNome": "Milan" } 
+    ]
+  },
+  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Verona", "squadraTrasferta": "Lazio", "golCasa": 0, "golTrasferta": 1,
+    "marcatori": [
+      { "nome": "V. Nelsson (AU)", "minuto": 79, "rigore": false, "squadraNome": "Lazio" } 
+    ]
+  },
+  { "giornata": 20, "data": "2026-01-11", "squadraCasa": "Inter", "squadraTrasferta": "Napoli", "golCasa": 2, "golTrasferta": 2,
+    "marcatori": [
+      { "nome": "F. Dimarco", "minuto": 9, "rigore": false, "squadraNome": "Inter" },
+      { "nome": "S. McTominay", "minuto": 27, "rigore": false, "squadraNome": "Napoli" },
+      { "nome": "H. Calhanoglu", "minuto": 73, "rigore": true, "squadraNome": "Inter" },
+      { "nome": "S. McTominay", "minuto": 81, "rigore": false, "squadraNome": "Napoli" } 
+    ] 
+  },
+  { "giornata": 20, "data": "2026-01-12", "squadraCasa": "Genoa", "squadraTrasferta": "Cagliari", "golCasa": 3, "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "L. Colombo", "minuto": 7, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "M. Frendrup", "minuto": 75, "rigore": false, "squadraNome": "Genoa" },
+      { "nome": "L. Ostigard", "minuto": 78, "rigore": false, "squadraNome": "Genoa" } 
+    ] 
+  },
+  { "giornata": 20, "data": "2026-01-12", "squadraCasa": "Juventus", "squadraTrasferta": "Cremonese", "golCasa": 5, "golTrasferta": 0,
+    "marcatori": [
+      { "nome": "G. Bremer", "minuto": 11, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "J. David", "minuto": 15, "rigore": false, "squadraNome": "Juventus" }, 
+      { "nome": "K. Yildiz", "minuto": 35, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "W. McKennie", "minuto": 47, "rigore": false, "squadraNome": "Juventus" },
+      { "nome": "W. McKennie", "minuto": 65, "rigore": false, "squadraNome": "Juventus" }
+    ] 
+  },
 
   { "giornata": 21, "data": "2026-01-16", "squadraCasa": "Pisa", "squadraTrasferta": "Atalanta", "golCasa": 1, "golTrasferta": 1 },
   { "giornata": 21, "data": "2026-01-17", "squadraCasa": "Udinese", "squadraTrasferta": "Inter", "golCasa": 0, "golTrasferta": 1 },

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 public class Partita
 {
     public int Id { get; set; }
@@ -14,6 +15,10 @@ public class Partita
 
     public List<Marcatore> Marcatori { get; set; } = new();
 
+    [NotMapped] // Dice al database: "Non cercare questa colonna, calcolala e basta"
     public DateTime Fine => Data.AddHours(2); 
-    public string CalendarioMatches => $"{SquadraCasa} {GolCasa}-{GolTrasferta} {SquadraTrasferta}";
+    
+    // Modifica questa: se GolCasa è null, la stringa potrebbe rompersi o apparire brutta
+    public string CalendarioMatches => 
+        $"{SquadraCasa} {(GolCasa.HasValue ? GolCasa.Value.ToString() : "?")}-{(GolTrasferta.HasValue ? GolTrasferta.Value.ToString() : "?")} {SquadraTrasferta}";
 }
