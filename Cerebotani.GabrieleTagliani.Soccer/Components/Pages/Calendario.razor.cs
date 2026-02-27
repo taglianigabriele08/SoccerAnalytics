@@ -24,5 +24,14 @@ namespace Cerebotani.GabrieleTagliani.Soccer
         {
             NavigationManager.NavigateTo("/campionati");
         }
+
+        public async Task DettagliPartita(Partita partita)
+        {
+            await DialogService.OpenAsync<DettagliPartitaDialog>(
+                $"Dettagli Match",
+                new Dictionary<string, object?>() { { "Match", partita } },
+                new DialogOptions() { Width = "600px", Height = "auto" }
+            );
+        }
     }
 }

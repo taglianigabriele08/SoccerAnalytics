@@ -29,7 +29,8 @@
         {
             <RadzenText TextStyle="TextStyle.H6" Text="@($"Giornata {giornata.Key}")" Class="rz-mt-6 rz-mb-2" />
 
-            <RadzenDataGrid Data="@giornata" TItem="Partita" AllowPaging="false" Density="Density.Compact" Style="width: 100%;">
+            <RadzenDataGrid Data="@giornata" TItem="Partita" AllowPaging="false" Density="Density.Compact" 
+                            Style="width: 100%; cursor: pointer;" RowSelect="@(args => DettagliPartita(args))">
                 <Columns>
                     <RadzenDataGridColumn TItem="Partita" Property="Data" Title="Data" Width="100px">
                         <Template Context="p">
