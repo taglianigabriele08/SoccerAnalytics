@@ -11,4 +11,6 @@ public class Partita
 
     // Relazione opzionale
     public Campionato? Campionato { get; set; }
+
+    public List<Marcatore> Marcatori { get; set; } = new();
 }
